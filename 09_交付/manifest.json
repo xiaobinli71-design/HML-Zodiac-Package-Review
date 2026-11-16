@@ -1,0 +1,221 @@
+{
+  "project": "HML_Zodiac_20261116_R2",
+  "built_at": "2026-11-16T09:02:43",
+  "files": [
+    {
+      "stage": "00_需求",
+      "name": "brief.json",
+      "size": 565
+    },
+    {
+      "stage": "01_选型",
+      "name": "selection_report.json",
+      "size": 800
+    },
+    {
+      "stage": "01_选型",
+      "name": "supported_families.txt",
+      "size": 12193
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+      "size": 2567
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.audit.json",
+      "size": 1328
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.qcheck.json",
+      "size": 1966
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0_prev.png",
+      "size": 19349
+    },
+    {
+      "stage": "02_刀版",
+      "name": "standard_dieline.json",
+      "size": 1386
+    },
+    {
+      "stage": "02_刀版",
+      "name": "标准刀版_book-shaped-box.dxf",
+      "size": 62361
+    },
+    {
+      "stage": "03_视觉",
+      "name": "ai_concept.png",
+      "size": 3393095
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork.svg",
+      "size": 2324
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork_outlined.svg",
+      "size": 68596
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork_outlined.svg.preflight.json",
+      "size": 1082
+    },
+    {
+      "stage": "04_3D",
+      "name": "artwork_face.png",
+      "size": 87687
+    },
+    {
+      "stage": "04_3D",
+      "name": "model.glb",
+      "size": 96768
+    },
+    {
+      "stage": "04_3D",
+      "name": "structure_report.json",
+      "size": 2090
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_00.png",
+      "size": 653790
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_01.png",
+      "size": 616937
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_02.png",
+      "size": 648318
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_03.png",
+      "size": 630130
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_04.png",
+      "size": 655362
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_05.png",
+      "size": 613602
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_06.png",
+      "size": 636416
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_07.png",
+      "size": 635137
+    },
+    {
+      "stage": "04_3D",
+      "name": "viewer.html",
+      "size": 650
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_FRONT.png",
+      "size": 2423499
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_ISOMETRIC.png",
+      "size": 2409007
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_RIGHT.png",
+      "size": 2344018
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_SHELF.png",
+      "size": 2439479
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_TOP.png",
+      "size": 2568190
+    },
+    {
+      "stage": "05_渲染",
+      "name": "standard_render.json",
+      "size": 1453
+    },
+    {
+      "stage": "06_审查",
+      "name": "G3_视觉审查报告.json",
+      "size": 9598
+    },
+    {
+      "stage": "06_审查",
+      "name": "G3_视觉审查报告.md",
+      "size": 2184
+    },
+    {
+      "stage": "07_预检",
+      "name": "G4_印前预检报告.json",
+      "size": 2003
+    },
+    {
+      "stage": "07_预检",
+      "name": "G4_印前预检报告.md",
+      "size": 1103
+    },
+    {
+      "stage": "08_输出",
+      "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.dxf",
+      "size": 8395
+    },
+    {
+      "stage": "08_输出",
+      "name": "print_cmyk.pdf",
+      "size": 4099
+    },
+    {
+      "stage": "08_输出",
+      "name": "print_x3.pdf",
+      "size": 163471
+    },
+    {
+      "stage": "08_输出",
+      "name": "standard_dieline.json",
+      "size": 1386
+    },
+    {
+      "stage": "08_输出",
+      "name": "标准刀版_book-shaped-box.dxf",
+      "size": 62361
+    },
+    {
+      "stage": "09_交付",
+      "name": "产品标签说明书.pdf",
+      "size": 4345
+    },
+    {
+      "stage": "09_交付",
+      "name": "印刷工艺说明书.pdf",
+      "size": 6827
+    },
+    {
+      "stage": "09_交付",
+      "name": "结构工艺说明书.pdf",
+      "size": 5080
+    }
+  ]
+}

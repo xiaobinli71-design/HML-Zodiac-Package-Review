@@ -1,0 +1,18 @@
+{
+  "project": "HML_Zodiac_20261116_R2",
+  "date": "20261116",
+  "real_count": 5,
+  "ai_count": 1,
+  "primary": "both",
+  "real_files": [
+    "ks_FRONT_HML_Zodiac_20261116_R2_20261116.png",
+    "ks_ISOMETRIC_HML_Zodiac_20261116_R2_20261116.png",
+    "ks_RIGHT_HML_Zodiac_20261116_R2_20261116.png",
+    "ks_SHELF_HML_Zodiac_20261116_R2_20261116.png",
+    "ks_TOP_HML_Zodiac_20261116_R2_20261116.png"
+  ],
+  "ai_files": [
+    "ai_ai_concept_HML_Zodiac_20261116_R2_20261116.png"
+  ],
+  "generated_at": "2026-11-16T09:02:43"
+}

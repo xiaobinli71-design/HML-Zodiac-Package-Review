@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+  "mesh": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\05_渲染\\_stp\\skeleton.obj",
+  "formats": {
+    "obj": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\05_渲染\\_stp\\skeleton.obj"
+  },
+  "n_meshes": 1,
+  "n_faces": 72,
+  "n_verts": 126,
+  "src_extent_mm": [
+    278.335,
+    350.962,
+    293.837
+  ],
+  "scale": 1.077838,
+  "scale_xyz": [
+    1.07783754,
+    0.12821903,
+    1.02097578
+  ],
+  "target_extent_applied": true,
+  "target_extent_mm": [
+    300.0,
+    45.0,
+    300.0
+  ],
+  "extent_error_mm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "final_extent_mm": [
+    300.0,
+    45.0,
+    300.0
+  ],
+  "watertight": false
+}

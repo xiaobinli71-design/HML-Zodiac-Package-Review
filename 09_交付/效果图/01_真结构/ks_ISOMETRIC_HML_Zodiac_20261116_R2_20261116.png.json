@@ -1,0 +1,10 @@
+{
+  "track": "real",
+  "view": "ISOMETRIC",
+  "source_stage": "05_渲染",
+  "geometry_source": "standard_stp_blender_cycles",
+  "source_file": "05_渲染\\ks_ISOMETRIC.png",
+  "bytes": 2409007,
+  "sha256": "361602b247a9a6d39e5cb6fefd450ba3c3607f3db60044fc22a1cd5ab086b202",
+  "collected_at": "2026-11-16T09:02:42"
+}

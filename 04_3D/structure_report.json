@@ -1,0 +1,146 @@
+{
+  "family": "bookbox",
+  "variant": "bookset",
+  "engine": "blender",
+  "params": {
+    "L": 300.0,
+    "W": 45.0,
+    "H": 300.0,
+    "D": 2.5
+  },
+  "parts": [
+    {
+      "name": "inner_tray",
+      "bbox": [
+        [
+          0.0,
+          2.75,
+          0.0
+        ],
+        [
+          294.5,
+          42.25,
+          286.0
+        ]
+      ],
+      "size": [
+        294.5,
+        39.5,
+        286.0
+      ]
+    },
+    {
+      "name": "case_back",
+      "bbox": [
+        [
+          0.0,
+          0.0,
+          -2.5
+        ],
+        [
+          300.0,
+          45.0,
+          0.0
+        ]
+      ],
+      "size": [
+        300.0,
+        45.0,
+        2.5
+      ]
+    },
+    {
+      "name": "case_spine",
+      "bbox": [
+        [
+          -2.5,
+          0.0,
+          -2.5
+        ],
+        [
+          0.0,
+          45.0,
+          297.5
+        ]
+      ],
+      "size": [
+        2.5,
+        45.0,
+        300.0
+      ]
+    },
+    {
+      "name": "case_front",
+      "bbox": [
+        [
+          0.0,
+          0.0,
+          295.0
+        ],
+        [
+          300.0,
+          45.0,
+          297.5
+        ]
+      ],
+      "size": [
+        300.0,
+        45.0,
+        2.5
+      ]
+    }
+  ],
+  "bbox": [
+    [
+      -2.5,
+      0.0,
+      -2.5
+    ],
+    [
+      300.0,
+      45.0,
+      297.5
+    ]
+  ],
+  "extent": {
+    "X": 302.5,
+    "Y": 45.0,
+    "Z": 300.0
+  },
+  "required": [
+    "inner_tray",
+    "case_back",
+    "case_spine",
+    "case_front"
+  ],
+  "features": {
+    "part_count": 4,
+    "open_gap": 9.0,
+    "spine_at_min_x": true,
+    "has_hinge": true,
+    "cover_above_tray": true
+  },
+  "artwork": {
+    "on": "case_front",
+    "size": [
+      300.0,
+      45.0
+    ],
+    "z": 297.5
+  },
+  "renders": {
+    "views": 8,
+    "res": 800,
+    "samples": 32,
+    "open_views": 2
+  },
+  "issues": [],
+  "ok": true,
+  "hinge": {
+    "pivot": [
+      -1.25,
+      22.5,
+      295.0
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "preflightAt": "2026-11-16T09:02:36+08:00",
+  "artifact": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\03_视觉\\print_artwork_outlined.svg",
+  "node": "7.1",
+  "status": "ok",
+  "criticalFailures": [],
+  "warnings": [],
+  "checks": [
+    {
+      "check": "artifact_exists",
+      "ok": true,
+      "detail": "1 files",
+      "critical": true
+    },
+    {
+      "check": "pf_no_placeholders",
+      "ok": true,
+      "detail": "0 hits: []",
+      "critical": true
+    },
+    {
+      "check": "pf_viewbox_present",
+      "ok": true,
+      "detail": "viewBox=viewBox=\"-5 -5 310.0 55.0\"",
+      "critical": true
+    },
+    {
+      "check": "pf_fonts_outlined",
+      "ok": true,
+      "detail": "<text> x0（印刷稿须转曲，仅屏幕预览可保留）",
+      "critical": false
+    },
+    {
+      "check": "pf_cmyk_reminder",
+      "ok": true,
+      "detail": "SVG为矢量色值，交付印厂前须确认已转CMYK（检测到hex/rgb色值=True）",
+      "critical": false
+    }
+  ],
+  "auditor": "print_preflight.py v1 (P0-2b)"
+}

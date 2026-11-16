@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HML_Zodiac_20261116_R2 — 效果图双轨对照</title>
+<style>
+:root{--bg:#121417;--card:#1c1f24;--fg:#e8eaed;--mut:#9aa0a6;--acc:#4da3ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
+font-family:"Microsoft YaHei",system-ui,sans-serif;padding:20px;max-width:1280px;margin:auto}
+h1{font-size:20px;margin:0 0 4px}.status{color:var(--mut);font-size:13px;margin-bottom:16px}
+.status b{color:var(--acc)}
+.cmp{position:relative;width:100%;aspect-ratio:1;background:#000;border-radius:10px;
+overflow:hidden;user-select:none;touch-action:none}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.cmp .top{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
+.cmp .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:var(--acc);
+transform:translateX(-1px);pointer-events:none}
+.cmp .bar::after{content:"⇔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+background:var(--acc);color:#fff;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
+.cmp .tag{position:absolute;top:10px;padding:3px 10px;font-size:12px;border-radius:4px;
+background:rgba(0,0,0,.55);z-index:2;pointer-events:none}
+.cmp .tag.l{left:10px}.cmp .tag.r{right:10px}
+h2{font-size:15px;color:var(--mut);margin:22px 0 10px;border-left:3px solid var(--acc);padding-left:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+figure{margin:0;background:var(--card);border-radius:8px;overflow:hidden}
+figure img{width:100%;aspect-ratio:1;object-fit:contain;background:#000;display:block;cursor:pointer}
+figcaption{font-size:12px;color:var(--mut);padding:6px 8px;text-align:center}
+.empty{color:var(--mut);background:var(--card);border-radius:8px;padding:24px;text-align:center;font-size:13px}
+</style></head><body>
+<h1>HML_Zodiac_20261116_R2 — 效果图双轨对照</h1>
+<div class="status">真结构 <b>5</b> 张 · AI 概念 <b>1</b> 张 · 主轨 <b>双轨</b><br>双轨齐全：左真结构 / 右 AI 概念，拖动滑块对照</div>
+<div class="cmp"><img class="base" src="02_AI概念/ai_ai_concept_HML_Zodiac_20261116_R2_20261116.png"><img class="top" src="01_真结构/ks_FRONT_HML_Zodiac_20261116_R2_20261116.png"><div class="tag l">真结构</div><div class="tag r">AI 概念</div><div class="bar"></div></div>
+<h2>01 真结构（标准盒型库 STP · Blender Cycles · 05_渲染）</h2>
+<div class="grid"><figure><img loading="lazy" src="01_真结构/ks_FRONT_HML_Zodiac_20261116_R2_20261116.png" alt="FRONT"><figcaption>FRONT</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_ISOMETRIC_HML_Zodiac_20261116_R2_20261116.png" alt="ISOMETRIC"><figcaption>ISOMETRIC</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_RIGHT_HML_Zodiac_20261116_R2_20261116.png" alt="RIGHT"><figcaption>RIGHT</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_SHELF_HML_Zodiac_20261116_R2_20261116.png" alt="SHELF"><figcaption>SHELF</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_TOP_HML_Zodiac_20261116_R2_20261116.png" alt="TOP"><figcaption>TOP</figcaption></figure></div>
+<h2>02 AI 概念（03_视觉）</h2>
+<div class="grid"><figure><img loading="lazy" src="02_AI概念/ai_ai_concept_HML_Zodiac_20261116_R2_20261116.png" alt="ai_concept"><figcaption>ai_concept</figcaption></figure></div>
+<script>
+(function(){
+  var cmp=document.querySelector('.cmp');if(!cmp)return;
+  function setX(e){var r=cmp.getBoundingClientRect();
+    var x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    cmp.style.setProperty('--x',Math.max(0,Math.min(100,x/r.width*100))+'%');}
+  cmp.addEventListener('pointerdown',function(e){cmp.setPointerCapture(e.pointerId);setX(e);});
+  cmp.addEventListener('pointermove',function(e){if(e.buttons)setX(e);});
+  document.querySelectorAll('figure img').forEach(function(img){
+    img.addEventListener('click',function(){
+      var l=document.querySelector('.cmp .top'),r=document.querySelector('.cmp .base');
+      if(!l||!r)return;
+      if(img.closest('.grid').previousElementSibling.textContent.indexOf('真结构')>=0){l.src=img.src;}
+      else{r.src=img.src;}
+    });});
+})();
+</script>
+</body></html>

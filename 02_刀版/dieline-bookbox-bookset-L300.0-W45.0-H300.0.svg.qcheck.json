@@ -1,0 +1,77 @@
+{
+  "qcheckedAt": "2026-11-16T08:56:32+08:00",
+  "artifact": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+  "node": "3.6",
+  "status": "ok",
+  "criticalFailures": [],
+  "warnings": [],
+  "checks": [
+    {
+      "check": "artifact_exists",
+      "ok": true,
+      "detail": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+      "critical": true
+    },
+    {
+      "check": "svg_wellformed",
+      "ok": true,
+      "detail": "",
+      "critical": true
+    },
+    {
+      "check": "q_cut_group_present",
+      "ok": true,
+      "detail": "cut_groups=1",
+      "critical": true
+    },
+    {
+      "check": "q_fold_group_present",
+      "ok": true,
+      "detail": "fold_groups=1",
+      "critical": true
+    },
+    {
+      "check": "q_fold_cut_separated",
+      "ok": true,
+      "detail": "mixed=0",
+      "critical": true
+    },
+    {
+      "check": "q_cut_closed_contour",
+      "ok": true,
+      "detail": "closed=True",
+      "critical": true
+    },
+    {
+      "check": "q_bleed_margin_ge_3mm",
+      "ok": true,
+      "detail": "margins(mm)=['15.0', '15.0', '15.0', '15.0']",
+      "critical": true
+    },
+    {
+      "check": "q_folds_inside_cut_bbox",
+      "ok": true,
+      "detail": "outside=0",
+      "critical": true
+    },
+    {
+      "check": "q_no_zero_length_folds",
+      "ok": true,
+      "detail": "zero_len=0",
+      "critical": true
+    },
+    {
+      "check": "q_dim_filename_vs_args",
+      "ok": true,
+      "detail": "file=L300.0 W45.0 H300.0 vs args=L300.0 W45.0 H300.0",
+      "critical": false
+    },
+    {
+      "check": "q_bbox_inside_viewbox",
+      "ok": true,
+      "detail": "all=['0.0', '-39.0', '1159.0', '342.0'] vb=['-15.0', '-54.0', '1174.0', '357.0']",
+      "critical": true
+    }
+  ],
+  "auditor": "dieline_qcheck.py v1 (P0-2c)"
+}

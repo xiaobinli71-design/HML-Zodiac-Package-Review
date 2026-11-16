@@ -1,0 +1,130 @@
+[08:56:31] [INFO] [G2] 未指定 --label-profile, 按品类自动判档 -> full
+[08:56:31] [INFO] 项目根目录: E:\Marvis\图档\HML_Zodiac_20261116_R2
+[08:56:31] [INFO] Run ID 分配 -> CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01 (case=CASE-BOOKBOX-BOOKSET-20261116-001, registry=v1.3)
+[08:56:31] [INFO] === 阶段 00: 需求冻结 ===
+[08:56:31] [INFO] 加载 58 条踩坑
+[08:56:31] [INFO] === 阶段 01: 盒型/变体判断 (G1) ===
+[08:56:31] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --list
+[08:56:31] [INFO]   -> [double-flap]  << 自定义盒型（本次注入）
+[08:56:31] [INFO]   ->   base	左右翻盖盒（左右对开翻盖·一纸成型）	默认 L300 W200 H45 D0.5	范围 L80-500 W80-400 H20-120 D0.3-3
+[08:56:31] [INFO]   -> 
+[08:56:31] [INFO]   -> [folding-display]  << 自定义盒型（本次注入）
+[08:56:31] [INFO]   ->   base	折叠展示盒（F-style 折叠成型展示盒）	默认 L200 W120 H180 D0.5	范围 L80-400 W60-300 H80-350 D0.3-2
+[08:56:31] [INFO] 解析出 26 个盒型族 / 95 个变体
+[08:56:31] [INFO] 变体 bookbox/bookset 存在且 L/W/H/D 全部在允许范围内
+[08:56:31] [INFO] === G1 通过 OK ===
+[08:56:31] [INFO] G1 结果记录 -> PASS (2 个产物已哈希)
+[08:56:31] [INFO] === 阶段 02: 刀模生成 + G0 ===
+[08:56:31] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --family bookbox --variant bookset ...
+[08:56:32] [INFO]   -> 盒型: 书型礼盒（皮壳+内盒两件套·带磁铁铁片孔） (bookbox/bookset)
+[08:56:32] [INFO]   -> 尺寸: L300 × W45 × H300 mm 纸厚 2.5mm
+[08:56:32] [INFO]   -> 展开尺寸: 1169 × 391 mm（含出血 5mm）
+[08:56:32] [INFO]   -> 画板: 1189 × 411 mm
+[08:56:32] [INFO]   -> 刀线 6 轮廓 / 84 点 | 折线 10 | 画面 0 面
+[08:56:32] [INFO] 刀模 -> dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg (2,567 B)
+[08:56:32] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\packview-dieline\svg_preview.py E:\Marvis\图档\HML_Zodiac_20261116_R2\02_刀版\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg
+[08:56:32] [INFO]   -> dieline-bookbox-bookset-L300.0-W45.0-H300.0_prev.png: 3567x1233
+[08:56:32] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\packview-audit\audit_dieline.py --artifact E:\Marvis\图档\HML_Zodiac_20261116_R2\02_刀版\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg --task-id PIPE-HML_Zodiac_20261116_R2 ...
+[08:56:32] [INFO]   -> AUDIT ok critical=[] warn=[]
+[08:56:32] [INFO]   -> OUT E:\Marvis\图档\HML_Zodiac_20261116_R2\02_刀版\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.audit.json
+[08:56:32] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\packview-audit\dieline_qcheck.py --artifact E:\Marvis\图档\HML_Zodiac_20261116_R2\02_刀版\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg --task-id PIPE-HML_Zodiac_20261116_R2 ...
+[08:56:32] [INFO]   -> QCHECK ok critical=[] warn=[]
+[08:56:32] [INFO]   -> OUT E:\Marvis\图档\HML_Zodiac_20261116_R2\02_刀版\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.qcheck.json
+[08:56:33] [INFO] 标准刀版 -> 标准刀版_book-shaped-box.dxf | 源 book-shaped box - 书型盒.dxf | CUT闭合 28 环 | 300.0×262.197mm
+[08:56:33] [INFO] === G0 通过 OK ===
+[08:56:33] [INFO] G0 结果记录 -> PASS (6 个产物已哈希)
+[08:56:33] [INFO] === 阶段 03: 视觉设计 + G2 ===
+[08:56:33] [INFO] [AI] 本地 ComfyUI z_image_turbo 出图:  韩美林十二生肖艺术典藏画册礼盒 高端包装盒效果图，书型礼盒盒型 lid and base box，盒盖微开斜置露出内衬
+[08:58:34] [INFO] [AI] 概念图 -> ai_concept.png (3,393,095 B)
+[08:58:34] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\scripts\qcheck_svg.py E:\Marvis\图档\HML_Zodiac_20261116_R2\03_视觉\print_artwork.svg --strict --profile full
+[08:58:34] [INFO]   -> [OK] print_artwork.svg
+[08:58:34] [INFO]   -> 
+[08:58:34] [INFO]   -> 共 1 个SVG，占位符/疑似占位命中 0 处 (profile=full)
+[08:58:34] [INFO] === G2 通过 OK ===
+[08:58:35] [INFO] 字体转曲: 11 行 <text> -> 轮廓 (68,596 B)
+[08:58:35] [INFO] G2 结果记录 -> PASS (3 个产物已哈希)
+[08:58:35] [INFO] === 阶段 04: 3D 建模 ===
+[08:58:35] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\skills\packview-3d\scripts\packview3d.py --family bookbox --L 300.0 ...
+[08:58:35] [INFO]   -> book-shaped-box              OK  standard-step       44.3KB -> E:\Marvis\图档\HML_Zodiac_20261116_R2\04_3D\model.glb\book-shaped-box.stp
+[08:58:35] [INFO]   -> --- 1/1 ok, 0 skipped, 0.0s, mode=step -> E:\Marvis\图档\HML_Zodiac_20261116_R2\04_3D\model.glb
+[08:58:35] [WARN] packview3d 输出 .3dm (保留: E:\Marvis\图档\HML_Zodiac_20261116_R2\04_3D\model.glb_rhino3dm) → 转 Blender 兜底生成 glb
+[08:58:38] [INFO] 贴图 -> artwork_face.png (87,687 B)
+[08:58:38] [INFO] $ C:\Program Files\Blender Foundation\Blender 5.1\blender.exe -b -P E:\Marvis\pipeline\blender_box.py -- --L ...
+[08:59:16] [INFO]   -> VIEW: E:\Marvis\图档\HML_Zodiac_20261116_R2\04_3D\view_07.png 635137
+[08:59:16] [INFO]   -> STRUCT ok=1 parts=4 issues=-
+[08:59:16] [INFO]   -> Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+[08:59:16] [INFO]   -> 
+[08:59:16] [INFO]   -> Blender quit
+[08:59:16] [INFO] 3D 模型 (Blender) -> model.glb (96,768 B), 8 视角
+[08:59:16] [INFO] 交互查看器 -> viewer.html
+[08:59:16] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\delivery-effects\build_preview_pack.py --model E:\Marvis\图档\HML_Zodiac_20261116_R2\04_3D\model.glb --out E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\预览 ...
+[08:59:16] [INFO]   -> [OK] vendor 已拷贝（离线可用）
+[08:59:16] [INFO]   -> [OK] 3D 预览打包 -> E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\预览 (model.glb 96768 bytes)
+[08:59:16] [INFO] 增强预览包 -> 09_交付/预览/preview.html
+[08:59:16] [INFO] === 阶段 05: 渲染 ===
+[08:59:16] [INFO] 标准 STP 源: 书型盒 | book-shaped box - 书型盒.stp
+[08:59:16] [INFO] 真结构源: book-shaped box - 书型盒.stp | 三轴目标 300.0×45.0×300.0 mm
+[08:59:19] [INFO] 印刷贴图 -> artwork_face.png (87,687 B)
+[08:59:19] [INFO] Blender Cycles: 加厚 2.5mm 倒圆 1.5mm 1600px 96spp
+[08:59:49] [INFO] 视角 FRONT -> OK
+[09:00:31] [INFO] 视角 RIGHT -> OK
+[09:01:13] [INFO] 视角 TOP -> OK
+[09:01:57] [INFO] 视角 ISOMETRIC -> OK
+[09:02:34] [INFO] 视角 SHELF -> OK
+[09:02:34] [INFO] 真结构主图 (标准 STP · Blender Cycles) 5 视角 -> 05_渲染/ks_*.png
+[09:02:34] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\video\video_composer.py --views E:\Marvis\图档\HML_Zodiac_20261116_R2\05_渲染 --out E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\视频\showcase.mp4 ...
+[09:02:36] [INFO]   -> [video] 合成: 165 帧 @ 22 fps -> E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\视频\showcase.mp4 (1920x1080)
+[09:02:36] [INFO]   -> [OK] 视频合成成功: E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\视频\showcase.mp4 (517459 bytes)
+[09:02:36] [INFO] 展示视频 -> 09_交付/视频/showcase.mp4
+[09:02:36] [INFO] === 阶段 06: G3 视觉审查 ===
+[09:02:36] [INFO]   02_刀版: 6 个有效文件
+[09:02:36] [INFO]   03_视觉: 3 个有效文件
+[09:02:36] [INFO]   3D 部件: inner_tray,case_back,case_spine,case_front
+[09:02:36] [INFO]   3D 外形: {'X': 302.5, 'Y': 45.0, 'Z': 300.0} | 特征: {'part_count': 4, 'open_gap': 9.0, 'spine_at_min_x': True, 'has_hinge': True, 'cover_above_tray': True}
+[09:02:36] [INFO]   3D 渲染: 8 视角 + model.glb (96,768 B)
+[09:02:36] [INFO]   标准源校验: 9 项全 PASS
+[09:02:36] [INFO] === G3 通过 OK ===
+[09:02:36] [INFO]   审查报告 -> 06_审查/G3_视觉审查报告.json|.md
+[09:02:36] [INFO] G3 结果记录 -> PASS (34 个产物已哈希)
+[09:02:36] [INFO] === 阶段 07: 印前 + G4 ===
+[09:02:36] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\print-preflight\print_preflight.py --artifact E:\Marvis\图档\HML_Zodiac_20261116_R2\03_视觉\print_artwork_outlined.svg --task-id PIPE-HML_Zodiac_20261116_R2 ...
+[09:02:36] [INFO]   -> PREFLIGHT ok critical=[] warn=[]
+[09:02:36] [INFO]   -> OUT E:\Marvis\图档\HML_Zodiac_20261116_R2\03_视觉\print_artwork_outlined.svg.preflight.json
+[09:02:36] [INFO] === G4 通过 OK ===
+[09:02:36] [INFO] CMYK PDF -> print_cmyk.pdf (4,099 B)
+[09:02:36] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --family bookbox --variant bookset ...
+[09:02:37] [INFO]   -> 盒型: 书型礼盒（皮壳+内盒两件套·带磁铁铁片孔） (bookbox/bookset)
+[09:02:37] [INFO]   -> 尺寸: L300 × W45 × H300 mm 纸厚 2.5mm
+[09:02:37] [INFO]   -> 展开尺寸: 1169 × 391 mm（含出血 5mm）
+[09:02:37] [INFO]   -> 图层: CUT刀线/CREASE压痕/PERF齿线/KISS半切/BLEED出血/FACE画面/DIM尺寸 (R12 ASCII, 单位mm)
+[09:02:37] [INFO]   -> 尺寸标注: 已启用
+[09:02:37] [INFO] DXF -> dieline-bookbox-bookset-L300.0-W45.0-H300.0.dxf (8,395 B) | R12 + 7 层 已校验
+[09:02:37] [INFO] 标准刀版交付 -> 标准刀版_book-shaped-box.dxf (62,361 B, CUT闭合 28 环)
+[09:02:37] [INFO] $ C:\Program Files\gs\gs10.08.0\bin\gswin64c.exe -dNOSAFER -dPDFX -dBATCH -dNOPAUSE -dNOOUTERSAVE ...
+[09:02:41] [INFO]   -> Page 1
+[09:02:41] [INFO]   -> Loading font Helvetica (or substitute) from %rom%Resource/Font/NimbusSans-Regular
+[09:02:41] [INFO]   -> Loading font Helvetica-Bold (or substitute) from %rom%Resource/Font/NimbusSans-Bold
+[09:02:41] [INFO]   -> Loading font ZapfDingbats (or substitute) from %rom%Resource/Font/D050000L
+[09:02:41] [INFO]   -> Loading CIDFont STSong-Light (or substitute) from C:/Windows/Fonts/simsun.ttc
+[09:02:41] [INFO] PDF/X -> print_x3.pdf (163,471 B) | 版本声明=有 OutputIntent=有 字体嵌入=3个/全嵌入
+[09:02:41] [INFO] === PDF/X 校验通过 OK ===
+[09:02:41] [INFO] $ E:\Marvis\tools\verapdf\app\verapdf.bat E:\Marvis\图档\HML_Zodiac_20261116_R2\08_输出\print_cmyk.pdf
+[09:02:42] [INFO]   ->     <featureReports failedJobs="0">0</featureReports>
+[09:02:42] [INFO]   ->     <repairReports failedJobs="0">0</repairReports>
+[09:02:42] [INFO]   ->     <duration start="1794790962312" finish="1794790962783">00:00:00.471</duration>
+[09:02:42] [INFO]   ->   </batchSummary>
+[09:02:42] [INFO]   -> </report>
+[09:02:42] [WARN]   [ERR] 
+[09:02:42] [INFO]   预检报告 -> 07_预检/G4_印前预检报告.json|.md
+[09:02:42] [INFO] G4 结果记录 -> PASS (7 个产物已哈希)
+[09:02:42] [INFO] === 阶段 08: 交付 ===
+[09:02:42] [INFO]   说明书 -> 印刷工艺说明书.pdf
+[09:02:42] [INFO]   说明书 -> 结构工艺说明书.pdf
+[09:02:42] [INFO]   说明书 -> 产品标签说明书.pdf
+[09:02:42] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\delivery-effects\collect_effects.py --project-root E:\Marvis\图档\HML_Zodiac_20261116_R2
+[09:02:43] [INFO]   -> [OK] 双轨归集: 真结构 5 / AI 1 / 主轨 both -> E:\Marvis\图档\HML_Zodiac_20261116_R2\09_交付\效果图
+[09:02:43] [INFO] manifest: 43 个文件 (回读校验 OK)
+[09:02:43] [INFO] 🎉 全流程完成 — 43 个交付文件
+[09:02:43] [OK] 证据侧复核 -> verdict=NOT_EVALUATED fail=0 release=NOT_RELEASED
+[09:02:43] [INFO] 机读状态 -> run_status.json (ok=True, stage=08_交付)
+[09:02:43] [INFO] 证据侧 -> verdict=NOT_EVALUATED release=NOT_RELEASED run_id=CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01

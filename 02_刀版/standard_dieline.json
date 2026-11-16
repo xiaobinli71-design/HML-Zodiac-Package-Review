@@ -1,0 +1,39 @@
+{
+  "source": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+  "source_name": "book-shaped box - 书型盒.dxf",
+  "source_is_standard": true,
+  "source_mode": "normalized-closed",
+  "output": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\标准刀版_book-shaped-box.dxf",
+  "src_bbox_mm": [
+    883.169,
+    280.519,
+    3280.156,
+    2375.463
+  ],
+  "src_extent_mm": [
+    2396.987,
+    2094.944
+  ],
+  "target_extent_mm": [
+    300.0,
+    45.0
+  ],
+  "scale_uniform": 0.12515711,
+  "out_extent_mm": [
+    300.0,
+    262.197
+  ],
+  "cut_closed_polylines": 28,
+  "crease_open_polylines": 22,
+  "points_scaled": 294,
+  "note": "标准刀模展开图固有长宽比；按 L 等比缩放，W 为派生值，不做非等比拉伸",
+  "ok": true,
+  "engine_family": "bookbox",
+  "slug": "book-shaped-box",
+  "name_zh": "书型盒",
+  "resolver": "standard_geometry/standard_source",
+  "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+  "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.dxf",
+  "standard_step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+  "standard_dxf_out": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\标准刀版_book-shaped-box.dxf"
+}

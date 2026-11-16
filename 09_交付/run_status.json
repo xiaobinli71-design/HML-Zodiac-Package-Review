@@ -1,0 +1,143 @@
+{
+  "ok": true,
+  "stage": "08_交付",
+  "message": "完成 — 43 个交付文件",
+  "exit_code": 0,
+  "project": "HML_Zodiac_20261116_R2",
+  "finished": "2026-11-16T09:02:43",
+  "file_count": 43,
+  "artifacts": {
+    "00_需求": [
+      "brief.json"
+    ],
+    "01_选型": [
+      "selection_report.json",
+      "supported_families.txt"
+    ],
+    "02_刀版": [
+      "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+      "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.audit.json",
+      "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.qcheck.json",
+      "dieline-bookbox-bookset-L300.0-W45.0-H300.0_prev.png",
+      "standard_dieline.json",
+      "标准刀版_book-shaped-box.dxf"
+    ],
+    "03_视觉": [
+      "ai_concept.png",
+      "print_artwork.svg",
+      "print_artwork_outlined.svg",
+      "print_artwork_outlined.svg.preflight.json"
+    ],
+    "04_3D": [
+      "artwork_face.png",
+      "model.glb",
+      "model.glb_rhino3dm",
+      "structure_report.json",
+      "view_00.png",
+      "view_01.png",
+      "view_02.png",
+      "view_03.png",
+      "view_04.png",
+      "view_05.png",
+      "view_06.png",
+      "view_07.png",
+      "viewer.html"
+    ],
+    "05_渲染": [
+      "_stp",
+      "ks_FRONT.png",
+      "ks_ISOMETRIC.png",
+      "ks_RIGHT.png",
+      "ks_SHELF.png",
+      "ks_TOP.png",
+      "standard_render.json"
+    ],
+    "06_审查": [
+      "G3_视觉审查报告.json",
+      "G3_视觉审查报告.md"
+    ],
+    "07_预检": [
+      "G4_印前预检报告.json",
+      "G4_印前预检报告.md"
+    ],
+    "08_输出": [
+      "dieline-bookbox-bookset-L300.0-W45.0-H300.0.dxf",
+      "print_cmyk.pdf",
+      "print_x3.pdf",
+      "standard_dieline.json",
+      "标准刀版_book-shaped-box.dxf"
+    ],
+    "09_交付": [
+      "manifest.json",
+      "产品标签说明书.pdf",
+      "印刷工艺说明书.pdf",
+      "效果图",
+      "结构工艺说明书.pdf",
+      "视频",
+      "预览"
+    ]
+  },
+  "evidence": {
+    "bridge": "ACTIVE",
+    "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+    "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+    "project_id": "PIPE-HML_Zodiac_20261116_R2",
+    "registry_version": "1.3",
+    "profile": "VERIFICATION",
+    "gate_status": {
+      "G1": "PASS",
+      "G0": "PASS",
+      "G2": "PASS",
+      "G3": "PASS",
+      "G4": "PASS"
+    },
+    "release_status": "NOT_RELEASED",
+    "release_approved": false,
+    "engineering_ok": true,
+    "engineering_exit_code": 0,
+    "note": "engineering_ok 仅代表九阶段执行完成；RELEASE 需人工签核，证据侧不代批。",
+    "bundle": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\09_交付\\result_records\\CASE-BOOKBOX-BOOKSET-20261116-001_RUN-20261116T085631_0800-01\\bundle.json",
+    "bundle_sha256": "1396d399e2ae5acacfb4ea8a5c38e7b05b9836bf27b912fbbbe3c9336e9224c0",
+    "evidence_report": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\09_交付\\result_records\\CASE-BOOKBOX-BOOKSET-20261116-001_RUN-20261116T085631_0800-01\\evidence_report.json",
+    "evidence_report_sha256": "81a6454f2bac95099d28a65564175baa79b6a53c6b21531b4354223e73940692",
+    "verdict": "NOT_EVALUATED",
+    "evidence_fail_count": 0,
+    "record_verdicts": [
+      {
+        "record_id": "RES-5D3AFAEC987A6D7B",
+        "gate_id": "G1",
+        "status": "PASS",
+        "verdict": "NOT_EVALUATED",
+        "rule_id": null
+      },
+      {
+        "record_id": "RES-5A37E32369D5A150",
+        "gate_id": "G0",
+        "status": "PASS",
+        "verdict": "NOT_EVALUATED",
+        "rule_id": null
+      },
+      {
+        "record_id": "RES-F01C75CF53876888",
+        "gate_id": "G2",
+        "status": "PASS",
+        "verdict": "NOT_EVALUATED",
+        "rule_id": null
+      },
+      {
+        "record_id": "RES-DEC9EF9A3E12986E",
+        "gate_id": "G3",
+        "status": "PASS",
+        "verdict": "NOT_EVALUATED",
+        "rule_id": null
+      },
+      {
+        "record_id": "RES-36071CA7B0B5597E",
+        "gate_id": "G4",
+        "status": "PASS",
+        "verdict": "NOT_EVALUATED",
+        "rule_id": null
+      }
+    ]
+  }
+}

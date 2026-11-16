@@ -1,0 +1,86 @@
+{
+  "schema": "packaging-system.result-record-evidence-report/v1.0",
+  "checked_at_utc": "2026-11-16T09:02:43+08:00",
+  "bundle_run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+  "bundle_case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+  "bundle_project_id": "PIPE-HML_Zodiac_20261116_R2",
+  "registry_version": "1.3",
+  "profile": "VERIFICATION",
+  "project_root": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2",
+  "record_count": 5,
+  "record_verdicts": [
+    {
+      "record_id": "RES-5D3AFAEC987A6D7B",
+      "gate_id": "G1",
+      "status": "PASS",
+      "verdict": "NOT_EVALUATED",
+      "rule_id": null
+    },
+    {
+      "record_id": "RES-5A37E32369D5A150",
+      "gate_id": "G0",
+      "status": "PASS",
+      "verdict": "NOT_EVALUATED",
+      "rule_id": null
+    },
+    {
+      "record_id": "RES-F01C75CF53876888",
+      "gate_id": "G2",
+      "status": "PASS",
+      "verdict": "NOT_EVALUATED",
+      "rule_id": null
+    },
+    {
+      "record_id": "RES-DEC9EF9A3E12986E",
+      "gate_id": "G3",
+      "status": "PASS",
+      "verdict": "NOT_EVALUATED",
+      "rule_id": null
+    },
+    {
+      "record_id": "RES-36071CA7B0B5597E",
+      "gate_id": "G4",
+      "status": "PASS",
+      "verdict": "NOT_EVALUATED",
+      "rule_id": null
+    }
+  ],
+  "findings": [
+    {
+      "code": "RR-08",
+      "severity": "INFO",
+      "message": "G1 在 Registry 中无已登记规则，证据侧上限 NOT_EVALUATED",
+      "record_id": "RES-5D3AFAEC987A6D7B"
+    },
+    {
+      "code": "RR-08",
+      "severity": "INFO",
+      "message": "G0 在 Registry 中无已登记规则，证据侧上限 NOT_EVALUATED",
+      "record_id": "RES-5A37E32369D5A150"
+    },
+    {
+      "code": "RR-08",
+      "severity": "INFO",
+      "message": "G2 在 Registry 中无已登记规则，证据侧上限 NOT_EVALUATED",
+      "record_id": "RES-F01C75CF53876888"
+    },
+    {
+      "code": "RR-08",
+      "severity": "INFO",
+      "message": "G3 在 Registry 中无已登记规则，证据侧上限 NOT_EVALUATED",
+      "record_id": "RES-DEC9EF9A3E12986E"
+    },
+    {
+      "code": "RR-08",
+      "severity": "INFO",
+      "message": "G4 在 Registry 中无已登记规则，证据侧上限 NOT_EVALUATED",
+      "record_id": "RES-36071CA7B0B5597E"
+    }
+  ],
+  "fail_count": 0,
+  "warn_count": 0,
+  "verdict": "NOT_EVALUATED",
+  "release_status": "NOT_RELEASED",
+  "release_note": "证据侧复核通过仅表示记录可追溯、哈希一致、规则已登记；不构成 RELEASE 批准。",
+  "release_approved": false
+}

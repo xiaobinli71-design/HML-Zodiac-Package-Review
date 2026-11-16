@@ -1,0 +1,48 @@
+{
+  "family": "bookbox",
+  "variant": "bookset",
+  "status": "ok",
+  "checks": [
+    {
+      "param": "L",
+      "value": 300.0,
+      "min": 150.0,
+      "max": 400.0,
+      "in_range": true
+    },
+    {
+      "param": "W",
+      "value": 45.0,
+      "min": 40.0,
+      "max": 150.0,
+      "in_range": true
+    },
+    {
+      "param": "H",
+      "value": 300.0,
+      "min": 60.0,
+      "max": 500.0,
+      "in_range": true
+    },
+    {
+      "param": "D",
+      "value": 2.5,
+      "min": 1.0,
+      "max": 3.0,
+      "in_range": true
+    }
+  ],
+  "variant_count": 10,
+  "available_variants": [
+    "base",
+    "bookset",
+    "bookset-duo",
+    "hsc",
+    "octagon",
+    "bliss",
+    "telescope",
+    "lidbase",
+    "partition",
+    "autobottom"
+  ]
+}

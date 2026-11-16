@@ -1,0 +1,331 @@
+{
+  "gate": "G3",
+  "stage": "06_审查",
+  "project": "HML_Zodiac_20261116_R2",
+  "project_id": "PIPE-HML_Zodiac_20261116_R2",
+  "product": "韩美林十二生肖艺术典藏画册礼盒",
+  "box": "bookbox/bookset",
+  "reviewed_at": "2026-11-16T09:02:36",
+  "reviewer": "marvis_pipeline/stage_06",
+  "result": "PASS",
+  "items": [
+    {
+      "check": "2D 刀版有效产物",
+      "detail": "6 个",
+      "rule": "文件 > 200B",
+      "pass": true
+    },
+    {
+      "check": "视觉稿有效产物",
+      "detail": "3 个",
+      "rule": "文件 > 200B",
+      "pass": true
+    },
+    {
+      "check": "3D 结构报告",
+      "detail": "structure_report.json",
+      "rule": "required 部件齐全 + issues 为空",
+      "pass": true
+    },
+    {
+      "check": "3D 外形偏差",
+      "detail": "X=302.5(设计300.0,+0.83%); Y=45.0(设计45.0,+0.00%); Z=300.0(设计300.0,+0.00%)",
+      "rule": "三轴偏差 ≤12%",
+      "pass": true
+    },
+    {
+      "check": "标准刀版源自标准库",
+      "detail": "book-shaped box - 书型盒.dxf",
+      "rule": "source_is_standard=true",
+      "pass": true
+    },
+    {
+      "check": "标准刀版 CUT 全闭合",
+      "detail": "28 个闭合环",
+      "rule": "CUT 闭合环 > 0",
+      "pass": true
+    },
+    {
+      "check": "标准刀版按项目 L 对齐",
+      "detail": "L=300.0 / 设计 300.0",
+      "rule": "|ΔL| ≤ 1mm",
+      "pass": true
+    },
+    {
+      "check": "真结构 STP 在标准白名单",
+      "detail": "book-shaped box - 书型盒.stp",
+      "rule": "路径属于标准库/技能层标准副本",
+      "pass": true
+    },
+    {
+      "check": "STP 按 L/W/H 三轴重建",
+      "detail": "[300.0, 45.0, 300.0]",
+      "rule": "target_extent_applied=true",
+      "pass": true
+    },
+    {
+      "check": "三轴尺寸误差 ≤1mm",
+      "detail": "[0.0, 0.0, 0.0]",
+      "rule": "max|Δ| ≤ 1mm",
+      "pass": true
+    },
+    {
+      "check": "印刷贴图已生成",
+      "detail": "87687 B",
+      "rule": "> 20KB",
+      "pass": true
+    },
+    {
+      "check": "视觉稿字体已转曲",
+      "detail": "剩余 <text> 0 个",
+      "rule": "= 0",
+      "pass": true
+    },
+    {
+      "check": "真结构主图有效",
+      "detail": "5 张",
+      "rule": "≥ 4 张 > 50KB",
+      "pass": true
+    }
+  ],
+  "deviation_table": [
+    {
+      "axis": "X",
+      "design": 300.0,
+      "model": 302.5,
+      "delta": 2.5,
+      "delta_pct": 0.83,
+      "tolerance_pct": 12.0,
+      "pass": true
+    },
+    {
+      "axis": "Y",
+      "design": 45.0,
+      "model": 45.0,
+      "delta": 0.0,
+      "delta_pct": 0.0,
+      "tolerance_pct": 12.0,
+      "pass": true
+    },
+    {
+      "axis": "Z",
+      "design": 300.0,
+      "model": 300.0,
+      "delta": 0.0,
+      "delta_pct": 0.0,
+      "tolerance_pct": 12.0,
+      "pass": true
+    }
+  ],
+  "artifacts_2d": {
+    "02_刀版": [
+      {
+        "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+        "size": 2567
+      },
+      {
+        "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.audit.json",
+        "size": 1328
+      },
+      {
+        "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.qcheck.json",
+        "size": 1966
+      },
+      {
+        "name": "dieline-bookbox-bookset-L300.0-W45.0-H300.0_prev.png",
+        "size": 19349
+      },
+      {
+        "name": "standard_dieline.json",
+        "size": 1386
+      },
+      {
+        "name": "标准刀版_book-shaped-box.dxf",
+        "size": 62361
+      }
+    ],
+    "03_视觉": [
+      {
+        "name": "ai_concept.png",
+        "size": 3393095
+      },
+      {
+        "name": "print_artwork.svg",
+        "size": 2324
+      },
+      {
+        "name": "print_artwork_outlined.svg",
+        "size": 68596
+      }
+    ]
+  },
+  "standard_source": {
+    "geometry": {
+      "engine_family": "bookbox",
+      "slug": "book-shaped-box",
+      "name_zh": "书型盒",
+      "source_dir": "E:\\2015\\标准模板文件\\盒型库",
+      "dxf": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+      "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+      "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.dxf",
+      "dxf_mode": "normalized-closed",
+      "dxf_closed": true,
+      "step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+      "step_name": "book-shaped box - 书型盒.stp",
+      "dwg": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.dwg",
+      "std_3dm": null,
+      "resolver": "standard_geometry/standard_source"
+    },
+    "dieline_meta": {
+      "source": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+      "source_name": "book-shaped box - 书型盒.dxf",
+      "source_is_standard": true,
+      "source_mode": "normalized-closed",
+      "output": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\标准刀版_book-shaped-box.dxf",
+      "src_bbox_mm": [
+        883.169,
+        280.519,
+        3280.156,
+        2375.463
+      ],
+      "src_extent_mm": [
+        2396.987,
+        2094.944
+      ],
+      "target_extent_mm": [
+        300.0,
+        45.0
+      ],
+      "scale_uniform": 0.12515711,
+      "out_extent_mm": [
+        300.0,
+        262.197
+      ],
+      "cut_closed_polylines": 28,
+      "crease_open_polylines": 22,
+      "points_scaled": 294,
+      "note": "标准刀模展开图固有长宽比；按 L 等比缩放，W 为派生值，不做非等比拉伸",
+      "ok": true,
+      "engine_family": "bookbox",
+      "slug": "book-shaped-box",
+      "name_zh": "书型盒",
+      "resolver": "standard_geometry/standard_source",
+      "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+      "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.dxf",
+      "standard_step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+      "standard_dxf_out": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\标准刀版_book-shaped-box.dxf"
+    },
+    "render_meta": {
+      "engine_family": "bookbox",
+      "slug": "book-shaped-box",
+      "name_zh": "书型盒",
+      "resolver": "standard_geometry/standard_source",
+      "standard_stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+      "standard_dxf": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\book-shaped box - 书型盒.dxf",
+      "target_extent_mm": [
+        300.0,
+        45.0,
+        300.0
+      ],
+      "mode": "standard-stp-target-extent+artwork",
+      "status": "OK",
+      "artwork": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\04_3D\\artwork_face.png",
+      "views": 5
+    },
+    "stp_mesh": {
+      "ok": true,
+      "stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\book-shaped box - 书型盒.stp",
+      "mesh": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\05_渲染\\_stp\\skeleton.obj",
+      "formats": {
+        "obj": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\05_渲染\\_stp\\skeleton.obj"
+      },
+      "n_meshes": 1,
+      "n_faces": 72,
+      "n_verts": 126,
+      "src_extent_mm": [
+        278.335,
+        350.962,
+        293.837
+      ],
+      "scale": 1.077838,
+      "scale_xyz": [
+        1.07783754,
+        0.12821903,
+        1.02097578
+      ],
+      "target_extent_applied": true,
+      "target_extent_mm": [
+        300.0,
+        45.0,
+        300.0
+      ],
+      "extent_error_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_extent_mm": [
+        300.0,
+        45.0,
+        300.0
+      ],
+      "watertight": false
+    },
+    "checks": [
+      {
+        "check": "标准刀版源自标准库",
+        "detail": "book-shaped box - 书型盒.dxf",
+        "rule": "source_is_standard=true",
+        "pass": true
+      },
+      {
+        "check": "标准刀版 CUT 全闭合",
+        "detail": "28 个闭合环",
+        "rule": "CUT 闭合环 > 0",
+        "pass": true
+      },
+      {
+        "check": "标准刀版按项目 L 对齐",
+        "detail": "L=300.0 / 设计 300.0",
+        "rule": "|ΔL| ≤ 1mm",
+        "pass": true
+      },
+      {
+        "check": "真结构 STP 在标准白名单",
+        "detail": "book-shaped box - 书型盒.stp",
+        "rule": "路径属于标准库/技能层标准副本",
+        "pass": true
+      },
+      {
+        "check": "STP 按 L/W/H 三轴重建",
+        "detail": "[300.0, 45.0, 300.0]",
+        "rule": "target_extent_applied=true",
+        "pass": true
+      },
+      {
+        "check": "三轴尺寸误差 ≤1mm",
+        "detail": "[0.0, 0.0, 0.0]",
+        "rule": "max|Δ| ≤ 1mm",
+        "pass": true
+      },
+      {
+        "check": "印刷贴图已生成",
+        "detail": "87687 B",
+        "rule": "> 20KB",
+        "pass": true
+      },
+      {
+        "check": "视觉稿字体已转曲",
+        "detail": "剩余 <text> 0 个",
+        "rule": "= 0",
+        "pass": true
+      },
+      {
+        "check": "真结构主图有效",
+        "detail": "5 张",
+        "rule": "≥ 4 张 > 50KB",
+        "pass": true
+      }
+    ]
+  }
+}

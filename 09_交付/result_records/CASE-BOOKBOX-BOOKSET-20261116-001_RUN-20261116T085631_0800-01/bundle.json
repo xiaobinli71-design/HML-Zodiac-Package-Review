@@ -1,0 +1,622 @@
+{
+  "schema": "packaging-system.result-record-bundle/v1.0",
+  "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+  "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+  "project_id": "PIPE-HML_Zodiac_20261116_R2",
+  "registry_version": "1.3",
+  "profile": "VERIFICATION",
+  "record_count": 5,
+  "gate_ids": [
+    "G0",
+    "G1",
+    "G2",
+    "G3",
+    "G4"
+  ],
+  "engineering_ok": true,
+  "release_status": "NOT_RELEASED",
+  "release_note": "工程侧记录不构成发布批准；RELEASE 需规则已批准 + 人工签核 + 证据侧复核。",
+  "produced_at_utc": "2026-11-16T09:02:43+08:00",
+  "records": [
+    {
+      "schema": "packaging-system.result-record/v1.0",
+      "record_id": "RES-5D3AFAEC987A6D7B",
+      "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+      "project_id": "PIPE-HML_Zodiac_20261116_R2",
+      "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+      "rule_id": null,
+      "rule_version": null,
+      "registry_version": "1.3",
+      "profile": "VERIFICATION",
+      "validator": {
+        "id": "result_record.py",
+        "file": "result_record.py",
+        "version": "1.0",
+        "sha256": "17b7fb6063b4039e2ab30d0d15c18f5f322a687ad95930afc1136f0746c669ce"
+      },
+      "status": "PASS",
+      "artifacts": [
+        {
+          "path": "01_选型/selection_report.json",
+          "sha256": "171a0689580beff618d2946cd0eda865911689c4e1f2679e79fedceb20e53c5b",
+          "bytes": 800,
+          "role": "g1"
+        },
+        {
+          "path": "01_选型/supported_families.txt",
+          "sha256": "b0f0889102275efa61a37dd1fa484dd83c4f97839945ed906f2bee2c14457095",
+          "bytes": 12193,
+          "role": "g1"
+        }
+      ],
+      "produced_at_utc": "2026-11-16T08:56:31+08:00",
+      "gate_id": "G1",
+      "command": [
+        "marvis_pipeline.py",
+        "--project",
+        "HML_Zodiac_20261116_R2",
+        "--product",
+        "韩美林十二生肖艺术典藏画册礼盒",
+        "--family",
+        "bookbox",
+        "--variant",
+        "bookset",
+        "--L",
+        "300",
+        "--W",
+        "45",
+        "--H",
+        "300",
+        "--D",
+        "2.5",
+        "--face-paper",
+        "九州方圆P130银白珠光细穗纹",
+        "--logo-finish",
+        "烫亮银+烫白+击凹",
+        "--inner-fill",
+        "定制灰板内衬+中国红特种纸裱"
+      ],
+      "findings": [],
+      "warnings": [],
+      "inputs_sha256": {},
+      "notes": {
+        "stage": "01_选型",
+        "pipeline_sha256": "a897b5d08481835b953355b8a901475290299ed5baa5e7e2005ef476832bca4c",
+        "product": "韩美林十二生肖艺术典藏画册礼盒",
+        "detail": null
+      },
+      "record_sha256": "393b47ea11d5749d29c98370310181f20ad4a2ca47f1865745132425338d1230"
+    },
+    {
+      "schema": "packaging-system.result-record/v1.0",
+      "record_id": "RES-5A37E32369D5A150",
+      "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+      "project_id": "PIPE-HML_Zodiac_20261116_R2",
+      "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+      "rule_id": null,
+      "rule_version": null,
+      "registry_version": "1.3",
+      "profile": "VERIFICATION",
+      "validator": {
+        "id": "result_record.py",
+        "file": "result_record.py",
+        "version": "1.0",
+        "sha256": "17b7fb6063b4039e2ab30d0d15c18f5f322a687ad95930afc1136f0746c669ce"
+      },
+      "status": "PASS",
+      "artifacts": [
+        {
+          "path": "02_刀版/dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+          "sha256": "8973cc09c746d9fdef42c8acc125d83b4d4c1d19e142b7ef489b35f20cacc02c",
+          "bytes": 2567,
+          "role": "g0"
+        },
+        {
+          "path": "02_刀版/dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.audit.json",
+          "sha256": "565163352ffcb0d7700aea4e5345e6b99070f23d6f06f46a5cfc1ee968ead7ed",
+          "bytes": 1328,
+          "role": "g0"
+        },
+        {
+          "path": "02_刀版/dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg.qcheck.json",
+          "sha256": "1cdae3d10077f76f80dbbdc76967d7fd43307f8ca9ff82da29c467b1f5d70641",
+          "bytes": 1966,
+          "role": "g0"
+        },
+        {
+          "path": "02_刀版/dieline-bookbox-bookset-L300.0-W45.0-H300.0_prev.png",
+          "sha256": "cdb3e64ff827cec1f7b406530bd3edee8944bd504a894f30b2e6ab5b26f964e5",
+          "bytes": 19349,
+          "role": "g0"
+        },
+        {
+          "path": "02_刀版/standard_dieline.json",
+          "sha256": "cbec3f0a7cf91b6a2062106483bffcd34718ea8c516e555d7f474c572b065dc3",
+          "bytes": 1386,
+          "role": "g0"
+        },
+        {
+          "path": "02_刀版/标准刀版_book-shaped-box.dxf",
+          "sha256": "d645700ce8eb69bbbf6c97a011a1df58b4fdb0161ee1b52f05f91a270b43662d",
+          "bytes": 62361,
+          "role": "g0"
+        }
+      ],
+      "produced_at_utc": "2026-11-16T08:56:33+08:00",
+      "gate_id": "G0",
+      "command": [
+        "marvis_pipeline.py",
+        "--project",
+        "HML_Zodiac_20261116_R2",
+        "--product",
+        "韩美林十二生肖艺术典藏画册礼盒",
+        "--family",
+        "bookbox",
+        "--variant",
+        "bookset",
+        "--L",
+        "300",
+        "--W",
+        "45",
+        "--H",
+        "300",
+        "--D",
+        "2.5",
+        "--face-paper",
+        "九州方圆P130银白珠光细穗纹",
+        "--logo-finish",
+        "烫亮银+烫白+击凹",
+        "--inner-fill",
+        "定制灰板内衬+中国红特种纸裱"
+      ],
+      "findings": [],
+      "warnings": [],
+      "inputs_sha256": {},
+      "notes": {
+        "stage": "02_刀版",
+        "pipeline_sha256": "a897b5d08481835b953355b8a901475290299ed5baa5e7e2005ef476832bca4c",
+        "product": "韩美林十二生肖艺术典藏画册礼盒",
+        "detail": null
+      },
+      "record_sha256": "9bd768ed588903ff0b106b2a39c5df254b461de7646a75a93239790c67cb7cc0"
+    },
+    {
+      "schema": "packaging-system.result-record/v1.0",
+      "record_id": "RES-F01C75CF53876888",
+      "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+      "project_id": "PIPE-HML_Zodiac_20261116_R2",
+      "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+      "rule_id": null,
+      "rule_version": null,
+      "registry_version": "1.3",
+      "profile": "VERIFICATION",
+      "validator": {
+        "id": "result_record.py",
+        "file": "result_record.py",
+        "version": "1.0",
+        "sha256": "17b7fb6063b4039e2ab30d0d15c18f5f322a687ad95930afc1136f0746c669ce"
+      },
+      "status": "PASS",
+      "artifacts": [
+        {
+          "path": "03_视觉/ai_concept.png",
+          "sha256": "6870534a846187370037fdd06f94c5a94c35ef8b65853fe5dfd731a897df1f8f",
+          "bytes": 3393095,
+          "role": "g2"
+        },
+        {
+          "path": "03_视觉/print_artwork.svg",
+          "sha256": "fcbb6aba4c9792c206c5aef2fc62c2d50cdc43c7c21016d092146b758ce49eed",
+          "bytes": 2324,
+          "role": "g2"
+        },
+        {
+          "path": "03_视觉/print_artwork_outlined.svg",
+          "sha256": "88f21296de0e374bb9e90fe1e9fb65dcab186605a377b36577c705af0c21b65d",
+          "bytes": 68596,
+          "role": "g2"
+        }
+      ],
+      "produced_at_utc": "2026-11-16T08:58:35+08:00",
+      "gate_id": "G2",
+      "command": [
+        "marvis_pipeline.py",
+        "--project",
+        "HML_Zodiac_20261116_R2",
+        "--product",
+        "韩美林十二生肖艺术典藏画册礼盒",
+        "--family",
+        "bookbox",
+        "--variant",
+        "bookset",
+        "--L",
+        "300",
+        "--W",
+        "45",
+        "--H",
+        "300",
+        "--D",
+        "2.5",
+        "--face-paper",
+        "九州方圆P130银白珠光细穗纹",
+        "--logo-finish",
+        "烫亮银+烫白+击凹",
+        "--inner-fill",
+        "定制灰板内衬+中国红特种纸裱"
+      ],
+      "findings": [],
+      "warnings": [],
+      "inputs_sha256": {},
+      "notes": {
+        "stage": "03_视觉",
+        "pipeline_sha256": "a897b5d08481835b953355b8a901475290299ed5baa5e7e2005ef476832bca4c",
+        "product": "韩美林十二生肖艺术典藏画册礼盒",
+        "detail": null
+      },
+      "record_sha256": "fb062e9acd8ee323cb941f4a3c51b6ec1a1b5e5e14d04898f59962503f501f94"
+    },
+    {
+      "schema": "packaging-system.result-record/v1.0",
+      "record_id": "RES-DEC9EF9A3E12986E",
+      "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+      "project_id": "PIPE-HML_Zodiac_20261116_R2",
+      "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+      "rule_id": null,
+      "rule_version": null,
+      "registry_version": "1.3",
+      "profile": "VERIFICATION",
+      "validator": {
+        "id": "result_record.py",
+        "file": "result_record.py",
+        "version": "1.0",
+        "sha256": "17b7fb6063b4039e2ab30d0d15c18f5f322a687ad95930afc1136f0746c669ce"
+      },
+      "status": "PASS",
+      "artifacts": [
+        {
+          "path": "03_视觉/ai_concept.png",
+          "sha256": "6870534a846187370037fdd06f94c5a94c35ef8b65853fe5dfd731a897df1f8f",
+          "bytes": 3393095,
+          "role": "g3"
+        },
+        {
+          "path": "03_视觉/print_artwork.svg",
+          "sha256": "fcbb6aba4c9792c206c5aef2fc62c2d50cdc43c7c21016d092146b758ce49eed",
+          "bytes": 2324,
+          "role": "g3"
+        },
+        {
+          "path": "03_视觉/print_artwork_outlined.svg",
+          "sha256": "88f21296de0e374bb9e90fe1e9fb65dcab186605a377b36577c705af0c21b65d",
+          "bytes": 68596,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/artwork_face.png",
+          "sha256": "b8bdab646df2e3560f5a16b2fa6819741c43d7e3625c8f6ccf971c3547d5466c",
+          "bytes": 87687,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/model.glb",
+          "sha256": "9d219d3fca7a706c66059da858bfa6ff5b6bd764ee6768f2852c10aef6e7179e",
+          "bytes": 96768,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/structure_report.json",
+          "sha256": "28a4de90b9615186603dc6a52d0a48040154910dd43b9ad4762b439dcbed4567",
+          "bytes": 2090,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_00.png",
+          "sha256": "393143abd8ea097916e86dac39bc5d7af3d4f0d4c7a40a66d1adef299189828d",
+          "bytes": 653790,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_01.png",
+          "sha256": "1c1240afa382d3172f61b9047c7f6e546c3cdb23db42603e1d14e29ba82e6a0e",
+          "bytes": 616937,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_02.png",
+          "sha256": "db0916e42a7181484051ffd0c1b8528e0eab3c0ca4d58b2757b29fb638ad259d",
+          "bytes": 648318,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_03.png",
+          "sha256": "e2eb94afc3b5e2fcfade20993603407ddc78416ad9bf931c228e15db2be2175f",
+          "bytes": 630130,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_04.png",
+          "sha256": "60bd23ad281fd455476706e61dd1c8ee949340d1b05b4ed61fd1a022920f14d3",
+          "bytes": 655362,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_05.png",
+          "sha256": "3bfd0e222e222c9e08a3247875fa3733da20a8e5c84ecacddbae0f669cfde0f3",
+          "bytes": 613602,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_06.png",
+          "sha256": "c661bc267075c19a970568b136a3dd5aef0bcb2637cc9a03e1354552505ad452",
+          "bytes": 636416,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/view_07.png",
+          "sha256": "3a4adf2c9b2be554beb696218a141262b643cd9ba18ffc614328ff388abee90c",
+          "bytes": 635137,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/viewer.html",
+          "sha256": "1e3d246bc5d575d1e6f0d39d76d45c397bfdf939e49e84e0094c29e5aba2232b",
+          "bytes": 650,
+          "role": "g3"
+        },
+        {
+          "path": "04_3D/model.glb_rhino3dm/book-shaped-box.stp",
+          "sha256": "139e0d1c04a84a9f3f5ad97be5e2b9526dd3d9db9fb1495c29705a4ef02797ac",
+          "bytes": 45400,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/ks_FRONT.png",
+          "sha256": "d803a6e042cc22d016a17a53348bc7ed6ce324d67af3b9e10c425470291ba06c",
+          "bytes": 2423499,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/ks_ISOMETRIC.png",
+          "sha256": "361602b247a9a6d39e5cb6fefd450ba3c3607f3db60044fc22a1cd5ab086b202",
+          "bytes": 2409007,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/ks_RIGHT.png",
+          "sha256": "5148647bdbd376abc0058d9b533ca755b9012b8ac9c2ffef884e776c45461933",
+          "bytes": 2344018,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/ks_SHELF.png",
+          "sha256": "f4769cdd5cc398e8e65c37bf0907033d88ae99703b39722188e5e4ef929aee2d",
+          "bytes": 2439479,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/ks_TOP.png",
+          "sha256": "8938120bb3371af95ae3a36fb25a280e97833281a70b21e47e7fe92d2220db64",
+          "bytes": 2568190,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/standard_render.json",
+          "sha256": "05c3083156ca27c31813913deb1025acd10aa90626d67cc9305f92ecb3b27117",
+          "bytes": 1453,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/material.mtl",
+          "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227",
+          "bytes": 198,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/material_0.png",
+          "sha256": "632f43596a9c3bdfd6ee36b4c46d4f8c0fbd784d1cb032b64e410dabecaab166",
+          "bytes": 78,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/skeleton.obj",
+          "sha256": "068d9750a7d1a74b9d93a57a2678fc868c2bbb501d67fcc8024d73b17cb2531e",
+          "bytes": 15259,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/skeleton_raw.obj",
+          "sha256": "f5076f29dac5b89b904b3692c3db4397ac8518b1b6eb83f5af49b48d5bafdc61",
+          "bytes": 13506,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/stp_mesh.json",
+          "sha256": "5beccb2f89e63dfa4cfbbe6a38a54ca33ed445725f656cf66aa46ca1b2785756",
+          "bytes": 776,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/render/blender_FRONT.png",
+          "sha256": "d803a6e042cc22d016a17a53348bc7ed6ce324d67af3b9e10c425470291ba06c",
+          "bytes": 2423499,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/render/blender_ISOMETRIC.png",
+          "sha256": "361602b247a9a6d39e5cb6fefd450ba3c3607f3db60044fc22a1cd5ab086b202",
+          "bytes": 2409007,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/render/blender_RIGHT.png",
+          "sha256": "5148647bdbd376abc0058d9b533ca755b9012b8ac9c2ffef884e776c45461933",
+          "bytes": 2344018,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/render/blender_SHELF.png",
+          "sha256": "f4769cdd5cc398e8e65c37bf0907033d88ae99703b39722188e5e4ef929aee2d",
+          "bytes": 2439479,
+          "role": "g3"
+        },
+        {
+          "path": "05_渲染/_stp/render/blender_TOP.png",
+          "sha256": "8938120bb3371af95ae3a36fb25a280e97833281a70b21e47e7fe92d2220db64",
+          "bytes": 2568190,
+          "role": "g3"
+        },
+        {
+          "path": "06_审查/G3_视觉审查报告.json",
+          "sha256": "01c28c5ef910117b9e4244d6e02e7181b38c1392f215c7ca47503fac223f8aed",
+          "bytes": 9598,
+          "role": "g3"
+        },
+        {
+          "path": "06_审查/G3_视觉审查报告.md",
+          "sha256": "6470cd0dfe583b19264f327697105812dcf12cea43d75c7b88411b1db5864d1c",
+          "bytes": 2184,
+          "role": "g3"
+        }
+      ],
+      "produced_at_utc": "2026-11-16T09:02:36+08:00",
+      "gate_id": "G3",
+      "command": [
+        "marvis_pipeline.py",
+        "--project",
+        "HML_Zodiac_20261116_R2",
+        "--product",
+        "韩美林十二生肖艺术典藏画册礼盒",
+        "--family",
+        "bookbox",
+        "--variant",
+        "bookset",
+        "--L",
+        "300",
+        "--W",
+        "45",
+        "--H",
+        "300",
+        "--D",
+        "2.5",
+        "--face-paper",
+        "九州方圆P130银白珠光细穗纹",
+        "--logo-finish",
+        "烫亮银+烫白+击凹",
+        "--inner-fill",
+        "定制灰板内衬+中国红特种纸裱"
+      ],
+      "findings": [],
+      "warnings": [],
+      "inputs_sha256": {},
+      "notes": {
+        "stage": "06_审查",
+        "pipeline_sha256": "a897b5d08481835b953355b8a901475290299ed5baa5e7e2005ef476832bca4c",
+        "product": "韩美林十二生肖艺术典藏画册礼盒",
+        "detail": null
+      },
+      "record_sha256": "3c6dfb1df84155ceaacc81efcd1e428934725bf985cd89d54d30002ea14f12fc"
+    },
+    {
+      "schema": "packaging-system.result-record/v1.0",
+      "record_id": "RES-36071CA7B0B5597E",
+      "run_id": "CASE-BOOKBOX-BOOKSET-20261116-001#RUN-20261116T085631+0800-01",
+      "project_id": "PIPE-HML_Zodiac_20261116_R2",
+      "case_id": "CASE-BOOKBOX-BOOKSET-20261116-001",
+      "rule_id": null,
+      "rule_version": null,
+      "registry_version": "1.3",
+      "profile": "VERIFICATION",
+      "validator": {
+        "id": "result_record.py",
+        "file": "result_record.py",
+        "version": "1.0",
+        "sha256": "17b7fb6063b4039e2ab30d0d15c18f5f322a687ad95930afc1136f0746c669ce"
+      },
+      "status": "PASS",
+      "artifacts": [
+        {
+          "path": "07_预检/G4_印前预检报告.json",
+          "sha256": "c1812c968f8296f91e13c2cf7d80e8fb2b27557486f76009608cc3e65a07fbb4",
+          "bytes": 2003,
+          "role": "g4"
+        },
+        {
+          "path": "07_预检/G4_印前预检报告.md",
+          "sha256": "3b3dea7def997675ed8047e04d68ed05f5127c1bf3365cde152ab6403ec2925b",
+          "bytes": 1103,
+          "role": "g4"
+        },
+        {
+          "path": "08_输出/dieline-bookbox-bookset-L300.0-W45.0-H300.0.dxf",
+          "sha256": "c39ca49d5fbd0d026a823e6e98ce6e71a74e821cbb6a11033a19812708740d3c",
+          "bytes": 8395,
+          "role": "g4"
+        },
+        {
+          "path": "08_输出/print_cmyk.pdf",
+          "sha256": "fd2429c3ab0d9a77856e066a8847c1516c70be5cc39b95eba93d834c9fe4a990",
+          "bytes": 4099,
+          "role": "g4"
+        },
+        {
+          "path": "08_输出/print_x3.pdf",
+          "sha256": "885eae1de0e77fd3deb2024464b4a27b1991f5df687fc9b18f8240e34a3751bc",
+          "bytes": 163471,
+          "role": "g4"
+        },
+        {
+          "path": "08_输出/standard_dieline.json",
+          "sha256": "cbec3f0a7cf91b6a2062106483bffcd34718ea8c516e555d7f474c572b065dc3",
+          "bytes": 1386,
+          "role": "g4"
+        },
+        {
+          "path": "08_输出/标准刀版_book-shaped-box.dxf",
+          "sha256": "d645700ce8eb69bbbf6c97a011a1df58b4fdb0161ee1b52f05f91a270b43662d",
+          "bytes": 62361,
+          "role": "g4"
+        }
+      ],
+      "produced_at_utc": "2026-11-16T09:02:42+08:00",
+      "gate_id": "G4",
+      "command": [
+        "marvis_pipeline.py",
+        "--project",
+        "HML_Zodiac_20261116_R2",
+        "--product",
+        "韩美林十二生肖艺术典藏画册礼盒",
+        "--family",
+        "bookbox",
+        "--variant",
+        "bookset",
+        "--L",
+        "300",
+        "--W",
+        "45",
+        "--H",
+        "300",
+        "--D",
+        "2.5",
+        "--face-paper",
+        "九州方圆P130银白珠光细穗纹",
+        "--logo-finish",
+        "烫亮银+烫白+击凹",
+        "--inner-fill",
+        "定制灰板内衬+中国红特种纸裱"
+      ],
+      "findings": [],
+      "warnings": [],
+      "inputs_sha256": {},
+      "notes": {
+        "stage": "07_预检",
+        "pipeline_sha256": "a897b5d08481835b953355b8a901475290299ed5baa5e7e2005ef476832bca4c",
+        "product": "韩美林十二生肖艺术典藏画册礼盒",
+        "detail": null
+      },
+      "record_sha256": "c6b30120a9388412cdca65fa1688377f54f210422abdd2d95489d792ba3a15ea"
+    }
+  ],
+  "engineering_exit_code": 0,
+  "engineering_message": "完成 — 43 个交付文件",
+  "bundle_sha256": "1396d399e2ae5acacfb4ea8a5c38e7b05b9836bf27b912fbbbe3c9336e9224c0"
+}

@@ -1,0 +1,59 @@
+{
+  "auditedAt": "2026-11-16T08:56:32+08:00",
+  "artifact": "E:\\Marvis\\图档\\HML_Zodiac_20261116_R2\\02_刀版\\dieline-bookbox-bookset-L300.0-W45.0-H300.0.svg",
+  "node": "3.6",
+  "status": "ok",
+  "criticalFailures": [],
+  "warnings": [],
+  "checks": [
+    {
+      "check": "artifact_exists",
+      "ok": true,
+      "detail": "",
+      "critical": true
+    },
+    {
+      "check": "artifact_size_le_50MB",
+      "ok": true,
+      "detail": "2567",
+      "critical": true
+    },
+    {
+      "check": "svg_wellformed",
+      "ok": true,
+      "detail": "",
+      "critical": true
+    },
+    {
+      "check": "svg_element_count_ge_4",
+      "ok": true,
+      "detail": "elements=19",
+      "critical": true
+    },
+    {
+      "check": "svg_no_bad_numbers",
+      "ok": true,
+      "detail": "NaN/Infinity/undefined",
+      "critical": true
+    },
+    {
+      "check": "svg_fold_marker_present",
+      "ok": true,
+      "detail": "no fold marker",
+      "critical": false
+    },
+    {
+      "check": "svg_coord_span_10_6000mm",
+      "ok": true,
+      "detail": "span=2617.0",
+      "critical": false
+    },
+    {
+      "check": "W_in_supported_range",
+      "ok": true,
+      "detail": "W=45.0",
+      "critical": true
+    }
+  ],
+  "auditor": "audit_dieline.py v1"
+}
