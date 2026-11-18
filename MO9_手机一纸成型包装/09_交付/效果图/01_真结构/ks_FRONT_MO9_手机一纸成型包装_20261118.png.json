@@ -1,0 +1,10 @@
+{
+  "track": "real",
+  "view": "FRONT",
+  "source_stage": "05_渲染",
+  "geometry_source": "standard_stp_blender_cycles",
+  "source_file": "05_渲染\\ks_FRONT.png",
+  "bytes": 2366795,
+  "sha256": "53c34bfa0f28416aea3ddad23fd7511e3664a8d8d3e15e2a88508b53bfe73339",
+  "collected_at": "2026-11-18T17:39:00"
+}

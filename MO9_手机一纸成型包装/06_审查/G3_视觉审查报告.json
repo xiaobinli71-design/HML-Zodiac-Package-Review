@@ -1,0 +1,339 @@
+{
+  "gate": "G3",
+  "stage": "06_审查",
+  "project": "MO9_手机一纸成型包装",
+  "project_id": "PIPE-MO9_手机一纸成型包装",
+  "product": "MO9手机",
+  "box": "double-flap/base",
+  "reviewed_at": "2026-11-18T17:38:57",
+  "reviewer": "marvis_pipeline/stage_06",
+  "result": "PASS",
+  "items": [
+    {
+      "check": "2D 刀版有效产物",
+      "detail": "6 个",
+      "rule": "文件 > 200B",
+      "pass": true
+    },
+    {
+      "check": "视觉稿有效产物",
+      "detail": "5 个",
+      "rule": "文件 > 200B",
+      "pass": true
+    },
+    {
+      "check": "3D 结构报告",
+      "detail": "structure_report.json",
+      "rule": "required 部件齐全 + issues 为空",
+      "pass": true
+    },
+    {
+      "check": "3D 外形偏差",
+      "detail": "X=220.0(设计220.0,+0.00%); Y=160.0(设计160.0,+0.00%); Z=62.0(设计60.0,+3.33%)",
+      "rule": "三轴偏差 ≤12%",
+      "pass": true
+    },
+    {
+      "check": "标准刀版源自标准库",
+      "detail": "double flap box - 左右翻盖盒.dxf",
+      "rule": "source_is_standard=true",
+      "pass": true
+    },
+    {
+      "check": "标准刀版 CUT 全闭合",
+      "detail": "45 个闭合环",
+      "rule": "CUT 闭合环 > 0",
+      "pass": true
+    },
+    {
+      "check": "标准刀版按项目 L 对齐",
+      "detail": "L=220.0 / 设计 220.0",
+      "rule": "|ΔL| ≤ 1mm",
+      "pass": true
+    },
+    {
+      "check": "真结构 STP 在标准白名单",
+      "detail": "double flap box - 左右翻盖盒.STP",
+      "rule": "路径属于标准库/技能层标准副本",
+      "pass": true
+    },
+    {
+      "check": "STP 按 L/W/H 三轴重建",
+      "detail": "[220.0, 160.0, 60.0]",
+      "rule": "target_extent_applied=true",
+      "pass": true
+    },
+    {
+      "check": "三轴尺寸误差 ≤1mm",
+      "detail": "[0.0, 0.0, 0.0]",
+      "rule": "max|Δ| ≤ 1mm",
+      "pass": true
+    },
+    {
+      "check": "印刷贴图已生成",
+      "detail": "82838 B",
+      "rule": "> 20KB",
+      "pass": true
+    },
+    {
+      "check": "视觉稿字体已转曲",
+      "detail": "剩余 <text> 0 个",
+      "rule": "= 0",
+      "pass": true
+    },
+    {
+      "check": "真结构主图有效",
+      "detail": "5 张",
+      "rule": "≥ 4 张 > 50KB",
+      "pass": true
+    }
+  ],
+  "deviation_table": [
+    {
+      "axis": "X",
+      "design": 220.0,
+      "model": 220.0,
+      "delta": 0.0,
+      "delta_pct": 0.0,
+      "tolerance_pct": 12.0,
+      "pass": true
+    },
+    {
+      "axis": "Y",
+      "design": 160.0,
+      "model": 160.0,
+      "delta": 0.0,
+      "delta_pct": 0.0,
+      "tolerance_pct": 12.0,
+      "pass": true
+    },
+    {
+      "axis": "Z",
+      "design": 60.0,
+      "model": 62.0,
+      "delta": 2.0,
+      "delta_pct": 3.33,
+      "tolerance_pct": 12.0,
+      "pass": true
+    }
+  ],
+  "artifacts_2d": {
+    "02_刀版": [
+      {
+        "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg",
+        "size": 1095
+      },
+      {
+        "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.audit.json",
+        "size": 1336
+      },
+      {
+        "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.qcheck.json",
+        "size": 1980
+      },
+      {
+        "name": "dieline-double-flap-base-L220.0-W160.0-H60.0_prev.png",
+        "size": 10266
+      },
+      {
+        "name": "standard_dieline.json",
+        "size": 1438
+      },
+      {
+        "name": "标准刀版_double-flap-box.dxf",
+        "size": 82249
+      }
+    ],
+    "03_视觉": [
+      {
+        "name": "ai_concept.png",
+        "size": 2613614
+      },
+      {
+        "name": "concept_prompt.md",
+        "size": 12856
+      },
+      {
+        "name": "concept_prompts.json",
+        "size": 17757
+      },
+      {
+        "name": "print_artwork.svg",
+        "size": 2303
+      },
+      {
+        "name": "print_artwork_outlined.svg",
+        "size": 62027
+      }
+    ]
+  },
+  "standard_source": {
+    "geometry": {
+      "engine_family": "double-flap",
+      "slug": "double-flap-box",
+      "name_zh": "左右翻盖盒",
+      "source_dir": "E:\\2015\\标准模板文件\\盒型库",
+      "dxf": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+      "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+      "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.dxf",
+      "dxf_mode": "normalized-closed",
+      "dxf_closed": true,
+      "step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+      "step_name": "double flap box - 左右翻盖盒.STP",
+      "dwg": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.dwg",
+      "std_3dm": null,
+      "resolver": "standard_geometry/standard_source"
+    },
+    "dieline_meta": {
+      "source": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+      "source_name": "double flap box - 左右翻盖盒.dxf",
+      "source_is_standard": true,
+      "source_mode": "normalized-closed",
+      "output": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\02_刀版\\标准刀版_double-flap-box.dxf",
+      "src_bbox_mm": [
+        772.861,
+        225.404,
+        5667.361,
+        2327.314
+      ],
+      "src_extent_mm": [
+        4894.501,
+        2101.909
+      ],
+      "target_extent_mm": [
+        220.0,
+        160.0
+      ],
+      "scale_uniform": 0.04494841,
+      "out_extent_mm": [
+        220.0,
+        94.477
+      ],
+      "cut_closed_polylines": 45,
+      "crease_open_polylines": 75,
+      "points_scaled": 558,
+      "note": "标准刀模展开图固有长宽比；按 L 等比缩放，W 为派生值，不做非等比拉伸",
+      "ok": true,
+      "engine_family": "double-flap",
+      "slug": "double-flap-box",
+      "name_zh": "左右翻盖盒",
+      "resolver": "standard_geometry/standard_source",
+      "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+      "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.dxf",
+      "standard_step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+      "standard_dxf_out": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\02_刀版\\标准刀版_double-flap-box.dxf"
+    },
+    "render_meta": {
+      "engine_family": "double-flap",
+      "slug": "double-flap-box",
+      "name_zh": "左右翻盖盒",
+      "resolver": "standard_geometry/standard_source",
+      "standard_stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+      "standard_dxf": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+      "target_extent_mm": [
+        220.0,
+        160.0,
+        60.0
+      ],
+      "mode": "standard-stp-target-extent+artwork",
+      "status": "OK",
+      "artwork": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\04_3D\\artwork_face.png",
+      "views": 5
+    },
+    "stp_mesh": {
+      "ok": true,
+      "stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+      "mesh": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\05_渲染\\_stp\\skeleton.obj",
+      "formats": {
+        "obj": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\05_渲染\\_stp\\skeleton.obj"
+      },
+      "n_meshes": 1,
+      "n_faces": 120,
+      "n_verts": 216,
+      "src_extent_mm": [
+        614.184,
+        370.879,
+        207.865
+      ],
+      "scale": 0.358199,
+      "scale_xyz": [
+        0.35819866,
+        0.4314075,
+        0.28864839
+      ],
+      "target_extent_applied": true,
+      "target_extent_mm": [
+        220.0,
+        160.0,
+        60.0
+      ],
+      "extent_error_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_extent_mm": [
+        220.0,
+        160.0,
+        60.0
+      ],
+      "watertight": false
+    },
+    "checks": [
+      {
+        "check": "标准刀版源自标准库",
+        "detail": "double flap box - 左右翻盖盒.dxf",
+        "rule": "source_is_standard=true",
+        "pass": true
+      },
+      {
+        "check": "标准刀版 CUT 全闭合",
+        "detail": "45 个闭合环",
+        "rule": "CUT 闭合环 > 0",
+        "pass": true
+      },
+      {
+        "check": "标准刀版按项目 L 对齐",
+        "detail": "L=220.0 / 设计 220.0",
+        "rule": "|ΔL| ≤ 1mm",
+        "pass": true
+      },
+      {
+        "check": "真结构 STP 在标准白名单",
+        "detail": "double flap box - 左右翻盖盒.STP",
+        "rule": "路径属于标准库/技能层标准副本",
+        "pass": true
+      },
+      {
+        "check": "STP 按 L/W/H 三轴重建",
+        "detail": "[220.0, 160.0, 60.0]",
+        "rule": "target_extent_applied=true",
+        "pass": true
+      },
+      {
+        "check": "三轴尺寸误差 ≤1mm",
+        "detail": "[0.0, 0.0, 0.0]",
+        "rule": "max|Δ| ≤ 1mm",
+        "pass": true
+      },
+      {
+        "check": "印刷贴图已生成",
+        "detail": "82838 B",
+        "rule": "> 20KB",
+        "pass": true
+      },
+      {
+        "check": "视觉稿字体已转曲",
+        "detail": "剩余 <text> 0 个",
+        "rule": "= 0",
+        "pass": true
+      },
+      {
+        "check": "真结构主图有效",
+        "detail": "5 张",
+        "rule": "≥ 4 张 > 50KB",
+        "pass": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "gate": "G4",
+  "stage": "07_预检",
+  "project": "MO9_手机一纸成型包装",
+  "project_id": "PIPE-MO9_手机一纸成型包装",
+  "checked_at": "2026-11-18T17:39:00",
+  "result": "PASS",
+  "preflight": {
+    "ran": true,
+    "artifact": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\03_视觉\\print_artwork_outlined.svg",
+    "returncode": 0,
+    "stdout": "PREFLIGHT ok critical=[] warn=[]\nOUT E:\\Marvis\\图档\\MO9_手机一纸成型包装\\03_视觉\\print_artwork_outlined.svg.preflight.json",
+    "stderr": ""
+  },
+  "rules": [
+    {
+      "item": "出血",
+      "spec": "3mm",
+      "value": "3mm (viewBox 外扩 -5..+5)",
+      "pass": true
+    },
+    {
+      "item": "色空间",
+      "spec": "CMYK / PDF-X 交付",
+      "value": "DeviceCMYK + OutputIntent",
+      "pass": true
+    },
+    {
+      "item": "字体",
+      "spec": "全部转曲/嵌入",
+      "value": "SVG 已 outline; PDF/X 字体全嵌入",
+      "pass": true
+    },
+    {
+      "item": "套印精度",
+      "spec": "+/-0.1mm",
+      "value": "刀版 qcheck/audit 已过",
+      "pass": true
+    },
+    {
+      "item": "分辨率",
+      "spec": ">=300dpi",
+      "value": "300dpi 位图/矢量稿",
+      "pass": true
+    },
+    {
+      "item": "页面尺寸",
+      "spec": "220.0x60.0mm + 出血",
+      "value": "SVG 230.0mm",
+      "pass": true
+    }
+  ],
+  "artifacts": {
+    "preflight_artifact": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\03_视觉\\print_artwork_outlined.svg",
+    "print_cmyk_pdf": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\08_输出\\print_cmyk.pdf",
+    "pdfx": {
+      "generated": true,
+      "verified": true,
+      "detail": "版本声明=有 OutputIntent=有 字体嵌入=4个/全嵌入",
+      "file": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\08_输出\\print_x3.pdf",
+      "size": 170690
+    },
+    "dxf": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\08_输出\\dieline-double-flap-base-L220.0-W160.0-H60.0.dxf"
+  }
+}

@@ -106,3 +106,42 @@ python E:\Marvis\pipeline\marvis_pipeline.py \
 ---
 
 本仓库内容用于工程评审与质量核验。涉及客户品牌与版权的图像资料，未经授权不得二次分发或商用。
+
+---
+
+# 案例二：MO9 手机一纸成型包装（2026-11-18）
+
+- 案例：**MO9 智能手机** 一纸成型环保纸质包装
+- 盒型族 / 变体：`double-flap` / `base`（左右对开翻盖 · 一纸成型）
+- 成品外尺寸：**L 220 × W 160 × H 60 mm**（默认值，待客户确认手机实测尺寸后回填）
+- 展开尺寸：**785 × 340 mm**（含 5mm 出血），画板 805 × 360 mm
+- 纸板厚度 D：**2 mm**
+- 生产运行：`CASE-RSC-BASE-20261118-001` → 完成时间 2026-11-18 17:39
+- 运行状态：**`ok: true`**，交付文件 **45 个**
+- 目录：`MO9_手机一纸成型包装/`（十个阶段产物，外发版剔除 `00_需求` 客户 BRIEF 原件）
+
+### 结构参数与门禁
+
+| 项 | 值 |
+|---|---|
+| 刀线 / 折线 | 15 点闭合轮廓 / 7 条折线，AUDIT + QCHECK 均 critical=0 warn=0 |
+| 印刷文件 | PDF/X，版本声明 + OutputIntent 齐全，字体 4 个全嵌入 |
+| 标签合规 | GB 4943.1 electronics 字段集：型号 / 执行标准 / 制造商 / 地址 / 产地 全齐 |
+| 门禁 | G0–G4 全 PASS |
+
+### 已知缺口（主动披露）
+
+1. **手机实测尺寸未回填**：L220/W160/H60 为默认值，客户提供手机长宽厚与重量后需重跑刀版。
+2. **制造商与地址为临时值**：`MO9 Technology Co., Ltd.` / `中国 广东省 深圳 龙岗区` 待客户确认后替换。
+3. **配件清单未纳入**：充电器、数据线、说明书的内部定位结构未建模，当前仅覆盖手机主体定位。
+4. **RELEASE 未签核**：证据侧（packaging-system）不可达，`release_status = NOT_RELEASED`，需人工审核后方可打样。
+
+### 复现方式
+
+```bash
+python E:\Marvis\pipeline\marvis_pipeline.py \
+  --project MO9_手机一纸成型包装 --product MO9手机 \
+  --family double-flap --variant base \
+  --L 220 --W 160 --H 60 --D 2 \
+  --label-profile electronics --label-json <电子标签字段集>.json
+```

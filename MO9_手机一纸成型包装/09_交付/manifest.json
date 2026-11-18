@@ -1,0 +1,231 @@
+{
+  "project": "MO9_手机一纸成型包装",
+  "built_at": "2026-11-18T17:39:00",
+  "files": [
+    {
+      "stage": "00_需求",
+      "name": "brief.json",
+      "size": 713
+    },
+    {
+      "stage": "01_选型",
+      "name": "selection_report.json",
+      "size": 650
+    },
+    {
+      "stage": "01_选型",
+      "name": "supported_families.txt",
+      "size": 12189
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg",
+      "size": 1095
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.audit.json",
+      "size": 1336
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.qcheck.json",
+      "size": 1980
+    },
+    {
+      "stage": "02_刀版",
+      "name": "dieline-double-flap-base-L220.0-W160.0-H60.0_prev.png",
+      "size": 10266
+    },
+    {
+      "stage": "02_刀版",
+      "name": "standard_dieline.json",
+      "size": 1438
+    },
+    {
+      "stage": "02_刀版",
+      "name": "标准刀版_double-flap-box.dxf",
+      "size": 82249
+    },
+    {
+      "stage": "03_视觉",
+      "name": "ai_concept.png",
+      "size": 2613614
+    },
+    {
+      "stage": "03_视觉",
+      "name": "concept_prompt.md",
+      "size": 12856
+    },
+    {
+      "stage": "03_视觉",
+      "name": "concept_prompts.json",
+      "size": 17757
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork.svg",
+      "size": 2303
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork_outlined.svg",
+      "size": 62027
+    },
+    {
+      "stage": "03_视觉",
+      "name": "print_artwork_outlined.svg.preflight.json",
+      "size": 1088
+    },
+    {
+      "stage": "04_3D",
+      "name": "artwork_face.png",
+      "size": 82838
+    },
+    {
+      "stage": "04_3D",
+      "name": "model.glb",
+      "size": 89672
+    },
+    {
+      "stage": "04_3D",
+      "name": "structure_report.json",
+      "size": 1338
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_00.png",
+      "size": 653894
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_01.png",
+      "size": 631694
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_02.png",
+      "size": 652090
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_03.png",
+      "size": 633493
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_04.png",
+      "size": 668440
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_05.png",
+      "size": 637335
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_06.png",
+      "size": 651546
+    },
+    {
+      "stage": "04_3D",
+      "name": "view_07.png",
+      "size": 636214
+    },
+    {
+      "stage": "04_3D",
+      "name": "viewer.html",
+      "size": 662
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_FRONT.png",
+      "size": 2366795
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_ISOMETRIC.png",
+      "size": 2591348
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_RIGHT.png",
+      "size": 2420703
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_SHELF.png",
+      "size": 2474171
+    },
+    {
+      "stage": "05_渲染",
+      "name": "ks_TOP.png",
+      "size": 2718677
+    },
+    {
+      "stage": "05_渲染",
+      "name": "standard_render.json",
+      "size": 1499
+    },
+    {
+      "stage": "06_审查",
+      "name": "G3_视觉审查报告.json",
+      "size": 9910
+    },
+    {
+      "stage": "06_审查",
+      "name": "G3_视觉审查报告.md",
+      "size": 2238
+    },
+    {
+      "stage": "07_预检",
+      "name": "G4_印前预检报告.json",
+      "size": 2052
+    },
+    {
+      "stage": "07_预检",
+      "name": "G4_印前预检报告.md",
+      "size": 1116
+    },
+    {
+      "stage": "08_输出",
+      "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.dxf",
+      "size": 3256
+    },
+    {
+      "stage": "08_输出",
+      "name": "print_cmyk.pdf",
+      "size": 4333
+    },
+    {
+      "stage": "08_输出",
+      "name": "print_x3.pdf",
+      "size": 170690
+    },
+    {
+      "stage": "08_输出",
+      "name": "standard_dieline.json",
+      "size": 1438
+    },
+    {
+      "stage": "08_输出",
+      "name": "标准刀版_double-flap-box.dxf",
+      "size": 82249
+    },
+    {
+      "stage": "09_交付",
+      "name": "产品标签说明书.pdf",
+      "size": 6300
+    },
+    {
+      "stage": "09_交付",
+      "name": "印刷工艺说明书.pdf",
+      "size": 6687
+    },
+    {
+      "stage": "09_交付",
+      "name": "结构工艺说明书.pdf",
+      "size": 4934
+    }
+  ]
+}

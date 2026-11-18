@@ -1,0 +1,18 @@
+{
+  "project": "MO9_手机一纸成型包装",
+  "date": "20261118",
+  "real_count": 5,
+  "ai_count": 1,
+  "primary": "both",
+  "real_files": [
+    "ks_FRONT_MO9_手机一纸成型包装_20261118.png",
+    "ks_ISOMETRIC_MO9_手机一纸成型包装_20261118.png",
+    "ks_RIGHT_MO9_手机一纸成型包装_20261118.png",
+    "ks_SHELF_MO9_手机一纸成型包装_20261118.png",
+    "ks_TOP_MO9_手机一纸成型包装_20261118.png"
+  ],
+  "ai_files": [
+    "ai_ai_concept_MO9_手机一纸成型包装_20261118.png"
+  ],
+  "generated_at": "2026-11-18T17:39:00"
+}

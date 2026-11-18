@@ -1,0 +1,10 @@
+{
+  "track": "real",
+  "view": "SHELF",
+  "source_stage": "05_渲染",
+  "geometry_source": "standard_stp_blender_cycles",
+  "source_file": "05_渲染\\ks_SHELF.png",
+  "bytes": 2474171,
+  "sha256": "7938cfe6bb0d67b01a82d6a66eebcdd72e2f81673f681d34c3e800bbf77318dd",
+  "collected_at": "2026-11-18T17:39:00"
+}

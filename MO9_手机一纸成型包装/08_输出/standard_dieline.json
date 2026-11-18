@@ -1,0 +1,39 @@
+{
+  "source": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+  "source_name": "double flap box - 左右翻盖盒.dxf",
+  "source_is_standard": true,
+  "source_mode": "normalized-closed",
+  "output": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\02_刀版\\标准刀版_double-flap-box.dxf",
+  "src_bbox_mm": [
+    772.861,
+    225.404,
+    5667.361,
+    2327.314
+  ],
+  "src_extent_mm": [
+    4894.501,
+    2101.909
+  ],
+  "target_extent_mm": [
+    220.0,
+    160.0
+  ],
+  "scale_uniform": 0.04494841,
+  "out_extent_mm": [
+    220.0,
+    94.477
+  ],
+  "cut_closed_polylines": 45,
+  "crease_open_polylines": 75,
+  "points_scaled": 558,
+  "note": "标准刀模展开图固有长宽比；按 L 等比缩放，W 为派生值，不做非等比拉伸",
+  "ok": true,
+  "engine_family": "double-flap",
+  "slug": "double-flap-box",
+  "name_zh": "左右翻盖盒",
+  "resolver": "standard_geometry/standard_source",
+  "dxf_normalized": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+  "dxf_raw": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.dxf",
+  "standard_step": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+  "standard_dxf_out": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\02_刀版\\标准刀版_double-flap-box.dxf"
+}

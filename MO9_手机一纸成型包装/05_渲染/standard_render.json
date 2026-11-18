@@ -1,0 +1,56 @@
+{
+  "engine_family": "double-flap",
+  "slug": "double-flap-box",
+  "name_zh": "左右翻盖盒",
+  "resolver": "standard_geometry/standard_source",
+  "standard_stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+  "standard_dxf": "E:\\Marvis\\skills\\packview-3d\\data\\normalized\\double flap box - 左右翻盖盒.dxf",
+  "target_extent_mm": [
+    220.0,
+    160.0,
+    60.0
+  ],
+  "mode": "standard-stp-target-extent+artwork",
+  "status": "OK",
+  "artwork": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\04_3D\\artwork_face.png",
+  "views": 5,
+  "stp_mesh": {
+    "ok": true,
+    "stp": "E:\\Marvis\\skills\\packview-3d\\data\\dielines\\double flap box - 左右翻盖盒.STP",
+    "mesh": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\05_渲染\\_stp\\skeleton.obj",
+    "formats": {
+      "obj": "E:\\Marvis\\图档\\MO9_手机一纸成型包装\\05_渲染\\_stp\\skeleton.obj"
+    },
+    "n_meshes": 1,
+    "n_faces": 120,
+    "n_verts": 216,
+    "src_extent_mm": [
+      614.184,
+      370.879,
+      207.865
+    ],
+    "scale": 0.358199,
+    "scale_xyz": [
+      0.35819866,
+      0.4314075,
+      0.28864839
+    ],
+    "target_extent_applied": true,
+    "target_extent_mm": [
+      220.0,
+      160.0,
+      60.0
+    ],
+    "extent_error_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_extent_mm": [
+      220.0,
+      160.0,
+      60.0
+    ],
+    "watertight": false
+  }
+}

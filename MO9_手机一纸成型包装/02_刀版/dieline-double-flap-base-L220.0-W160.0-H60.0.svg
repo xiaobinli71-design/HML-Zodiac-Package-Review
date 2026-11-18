@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="805mm" height="360mm" viewBox="-15 -125 805 360">
+<rect x="-15" y="-125" width="805" height="360" fill="#ffffff"/>
+<g stroke="#16a34a" stroke-width="0.176" stroke-dasharray="0.706,0.353" fill="none">
+<path d="M -5 -5 L -5 65 L 390 65 L 390 225 L 620 225 L 620 65 L 780 65 L 780 0 L 780 -115 L 610 -115 L 610 -5 L 400 -5 L 400 -115 L 230 -115 L 230 -5 Z"/>
+</g>
+<g stroke="#d92d20" stroke-dasharray="1.058,0.706" fill="none">
+<line x1="15" y1="0" x2="15" y2="60" stroke-width="2"/>
+<line x1="235" y1="0" x2="235" y2="60" stroke-width="2"/>
+<line x1="395" y1="0" x2="395" y2="60" stroke-width="2"/>
+<line x1="615" y1="0" x2="615" y2="60" stroke-width="2"/>
+<line x1="235" y1="0" x2="395" y2="0" stroke-width="2"/>
+<line x1="615" y1="0" x2="775" y2="0" stroke-width="2"/>
+<line x1="395" y1="60" x2="615" y2="60" stroke-width="2"/>
+</g>
+<g stroke="#2563eb" stroke-width="0.176" fill="none">
+<path d="M 0 0 L 0 60 L 395 60 L 395 220 L 615 220 L 615 60 L 775 60 L 775 0 L 775 -110 L 615 -110 L 615 0 L 395 0 L 395 -110 L 235 -110 L 235 0 Z"/>
+</g>
+</svg>

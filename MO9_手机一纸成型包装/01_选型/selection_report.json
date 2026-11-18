@@ -1,0 +1,39 @@
+{
+  "family": "double-flap",
+  "variant": "base",
+  "status": "ok",
+  "checks": [
+    {
+      "param": "L",
+      "value": 220.0,
+      "min": 80.0,
+      "max": 500.0,
+      "in_range": true
+    },
+    {
+      "param": "W",
+      "value": 160.0,
+      "min": 80.0,
+      "max": 400.0,
+      "in_range": true
+    },
+    {
+      "param": "H",
+      "value": 60.0,
+      "min": 20.0,
+      "max": 120.0,
+      "in_range": true
+    },
+    {
+      "param": "D",
+      "value": 2.0,
+      "min": 0.3,
+      "max": 3.0,
+      "in_range": true
+    }
+  ],
+  "variant_count": 1,
+  "available_variants": [
+    "base"
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="230.0mm" height="70.0mm" viewBox="-5 -5 230.0 70.0">
+  <g id="cut" stroke="#2563eb" stroke-width="0.3528" fill="none">
+    <rect x="0" y="0" width="220.0" height="60.0"/>
+  </g>
+  <g id="fold" stroke="#d92d20" stroke-width="0.7056" stroke-dasharray="2.1168,1.4112" fill="none">
+    <line x1="110.0" y1="0" x2="110.0" y2="60.0"/>
+  </g>
+  <g id="artwork">
+    <rect x="-5" y="-5" width="230.0" height="70.0" fill="#faf7f2"/>
+    <rect x="0" y="1.8" width="220.0" height="13.2" fill="#efe8dd"/>
+    <line x1="6" y1="16.2" x2="214.0" y2="16.2" stroke="#b9a98f" stroke-width="0.4"/>
+    <line x1="6" y1="55.8" x2="214.0" y2="55.8" stroke="#b9a98f" stroke-width="0.4"/>
+    <rect x="180.0" y="56.7" width="30" height="11" fill="none" stroke="#8a8a8a" stroke-width="0.3"/>
+    <text x="195.0" y="59.1" font-size="3.4" font-family="Arial" fill="#8a8a8a" text-anchor="middle">GS1-128 / SN</text>
+    <text x="6" y="59.1" font-size="3.4" font-family="Arial" fill="#555555">EFUP 10Y | 可回收 | UN38.3</text>
+  </g>
+  <g id="logo-hotstamp">
+    <text x="110.0" y="10.8" font-size="9.0" font-family="Arial" font-weight="bold" text-anchor="middle">MO9手机</text>
+    <text x="110.0" y="14.1" font-size="3.6" font-family="Arial" text-anchor="middle" fill="#8a7a63">PREMIUM PACKAGING · DOUBLE-FLAP</text>
+  </g>
+    <text x="110.0" y="21.6" font-size="6.0" font-family="Arial" text-anchor="middle">型号: MO9-5G</text>
+  <text x="110.0" y="26.6" font-size="4.5" font-family="Arial" text-anchor="middle">执行标准: GB 4943.1</text>
+  <text x="110.0" y="31.5" font-size="4.5" font-family="Arial" text-anchor="middle">制造商: MO9 Technology Co., Ltd.</text>
+  <text x="110.0" y="36.5" font-size="4.5" font-family="Arial" text-anchor="middle">地址: 中国 广东省 深圳 龙岗区</text>
+  <text x="110.0" y="41.5" font-size="5.0" font-family="Arial" text-anchor="middle">产地: 中国制造  Made in China</text>
+  <text x="110.0" y="46.5" font-size="4.8" font-family="Arial" text-anchor="middle">一纸成型 · 环保纸质包装 · 100% 可回收</text>
+  <text x="110.0" y="51.4" font-size="4.5" font-family="Arial" text-anchor="middle">内含锂电池  UN38.3  |  EFUP 10Y</text></svg>

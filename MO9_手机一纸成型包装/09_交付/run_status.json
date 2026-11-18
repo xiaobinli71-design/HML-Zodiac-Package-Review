@@ -1,0 +1,89 @@
+{
+  "ok": true,
+  "stage": "08_交付",
+  "message": "完成 — 45 个交付文件",
+  "exit_code": 0,
+  "project": "MO9_手机一纸成型包装",
+  "finished": "2026-11-18T17:39:00",
+  "file_count": 45,
+  "artifacts": {
+    "00_需求": [
+      "brief.json"
+    ],
+    "01_选型": [
+      "selection_report.json",
+      "supported_families.txt"
+    ],
+    "02_刀版": [
+      "dieline-double-flap-base-L220.0-W160.0-H60.0.svg",
+      "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.audit.json",
+      "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.qcheck.json",
+      "dieline-double-flap-base-L220.0-W160.0-H60.0_prev.png",
+      "standard_dieline.json",
+      "标准刀版_double-flap-box.dxf"
+    ],
+    "03_视觉": [
+      "ai_concept.png",
+      "concept_prompt.md",
+      "concept_prompts.json",
+      "print_artwork.svg",
+      "print_artwork_outlined.svg",
+      "print_artwork_outlined.svg.preflight.json"
+    ],
+    "04_3D": [
+      "artwork_face.png",
+      "model.glb",
+      "model.glb_rhino3dm",
+      "structure_report.json",
+      "view_00.png",
+      "view_01.png",
+      "view_02.png",
+      "view_03.png",
+      "view_04.png",
+      "view_05.png",
+      "view_06.png",
+      "view_07.png",
+      "viewer.html"
+    ],
+    "05_渲染": [
+      "_stp",
+      "ks_FRONT.png",
+      "ks_ISOMETRIC.png",
+      "ks_RIGHT.png",
+      "ks_SHELF.png",
+      "ks_TOP.png",
+      "standard_render.json"
+    ],
+    "06_审查": [
+      "G3_视觉审查报告.json",
+      "G3_视觉审查报告.md"
+    ],
+    "07_预检": [
+      "G4_印前预检报告.json",
+      "G4_印前预检报告.md"
+    ],
+    "08_输出": [
+      "dieline-double-flap-base-L220.0-W160.0-H60.0.dxf",
+      "print_cmyk.pdf",
+      "print_x3.pdf",
+      "standard_dieline.json",
+      "标准刀版_double-flap-box.dxf"
+    ],
+    "09_交付": [
+      "manifest.json",
+      "产品标签说明书.pdf",
+      "印刷工艺说明书.pdf",
+      "效果图",
+      "结构工艺说明书.pdf",
+      "视频",
+      "预览"
+    ]
+  },
+  "evidence": {
+    "bridge": "UNAVAILABLE",
+    "verdict": "NOT_EVALUATED",
+    "release_status": "NOT_RELEASED",
+    "release_approved": false,
+    "reason": "packaging-system 不可达，未生成结果记录"
+  }
+}

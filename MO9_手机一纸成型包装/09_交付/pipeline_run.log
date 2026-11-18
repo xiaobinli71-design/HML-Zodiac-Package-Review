@@ -1,0 +1,126 @@
+[17:34:17] [INFO] --clean: 已清空 15 项旧产物 (E:\Marvis\图档\MO9_手机一纸成型包装)
+[17:34:17] [INFO] 项目根目录: E:\Marvis\图档\MO9_手机一纸成型包装
+[17:34:17] [WARN] 证据记录初始化失败（降级）: case_id 不符合 id-convention: 'CASE-DOUBLE-FLAP-BASE-20261118-001'
+[17:34:17] [INFO] === 阶段 00: 需求冻结 ===
+[17:34:17] [INFO] 加载 58 条踩坑
+[17:34:17] [INFO] === 阶段 01: 盒型/变体判断 (G1) ===
+[17:34:17] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --list
+[17:34:17] [INFO]   -> [double-flap]  << 自定义盒型（本次注入）
+[17:34:17] [INFO]   ->   base	左右翻盖盒（左右对开翻盖·一纸成型）	默认 L300 W200 H45 D0.5	范围 L80-500 W80-400 H20-120 D0.3-3
+[17:34:17] [INFO]   -> 
+[17:34:17] [INFO]   -> [folding-display]  << 自定义盒型（本次注入）
+[17:34:17] [INFO]   ->   base	折叠展示盒（F-style 折叠成型展示盒）	默认 L200 W120 H180 D0.5	范围 L80-400 W60-300 H80-350 D0.3-2
+[17:34:17] [INFO] 解析出 26 个盒型族 / 95 个变体
+[17:34:17] [INFO] 变体 double-flap/base 存在且 L/W/H/D 全部在允许范围内
+[17:34:17] [INFO] === G1 通过 OK ===
+[17:34:17] [INFO] === 阶段 02: 刀模生成 + G0 ===
+[17:34:17] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --family double-flap --variant base ...
+[17:34:18] [INFO]   -> 盒型: 左右翻盖盒（左右对开翻盖·一纸成型） (double-flap/base)
+[17:34:18] [INFO]   -> 尺寸: L220 × W160 × H60 mm 纸厚 2mm
+[17:34:18] [INFO]   -> 展开尺寸: 785 × 340 mm（含出血 5mm）
+[17:34:18] [INFO]   -> 画板: 805 × 360 mm
+[17:34:18] [INFO]   -> 刀线 1 轮廓 / 15 点 | 折线 7 | 画面 0 面
+[17:34:18] [INFO] 刀模 -> dieline-double-flap-base-L220.0-W160.0-H60.0.svg (1,095 B)
+[17:34:18] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\packview-dieline\svg_preview.py E:\Marvis\图档\MO9_手机一纸成型包装\02_刀版\dieline-double-flap-base-L220.0-W160.0-H60.0.svg
+[17:34:18] [INFO]   -> dieline-double-flap-base-L220.0-W160.0-H60.0_prev.png: 2415x1080
+[17:34:18] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\packview-audit\audit_dieline.py --artifact E:\Marvis\图档\MO9_手机一纸成型包装\02_刀版\dieline-double-flap-base-L220.0-W160.0-H60.0.svg --task-id PIPE-MO9_手机一纸成型包装 ...
+[17:34:18] [INFO]   -> AUDIT ok critical=[] warn=[]
+[17:34:18] [INFO]   -> OUT E:\Marvis\图档\MO9_手机一纸成型包装\02_刀版\dieline-double-flap-base-L220.0-W160.0-H60.0.svg.audit.json
+[17:34:18] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\packview-audit\dieline_qcheck.py --artifact E:\Marvis\图档\MO9_手机一纸成型包装\02_刀版\dieline-double-flap-base-L220.0-W160.0-H60.0.svg --task-id PIPE-MO9_手机一纸成型包装 ...
+[17:34:18] [INFO]   -> QCHECK ok critical=[] warn=[]
+[17:34:18] [INFO]   -> OUT E:\Marvis\图档\MO9_手机一纸成型包装\02_刀版\dieline-double-flap-base-L220.0-W160.0-H60.0.svg.qcheck.json
+[17:34:19] [INFO] 标准刀版 -> 标准刀版_double-flap-box.dxf | 源 double flap box - 左右翻盖盒.dxf | CUT闭合 45 环 | 220.0×94.477mm
+[17:34:19] [INFO] === G0 通过 OK ===
+[17:34:19] [INFO] === 阶段 03: 视觉设计 + G2 ===
+[17:34:19] [INFO] [handraw] 提案 prompt 包 -> concept_prompts.json (4 槽位), 主图图型 EC-001 单品主图
+[17:34:19] [INFO] [AI] 本地 ComfyUI z_image_turbo 出图: 【结构】double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，盒盖完整闭合，45° 俯视三分之四
+[17:34:21] [INFO] [AI] 概念图 -> ai_concept.png (2,613,614 B)
+[17:34:21] [INFO] [视觉] 文字行取 --label-json (7 行)
+[17:34:21] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\scripts\qcheck_svg.py E:\Marvis\图档\MO9_手机一纸成型包装\03_视觉\print_artwork.svg --strict --profile electronics
+[17:34:21] [INFO]   -> [OK] print_artwork.svg
+[17:34:21] [INFO]   -> 
+[17:34:21] [INFO]   -> 共 1 个SVG，占位符/疑似占位命中 0 处 (profile=electronics)
+[17:34:21] [INFO] === G2 通过 OK ===
+[17:34:23] [INFO] 字体转曲: 11 行 <text> -> 轮廓 (62,027 B)
+[17:34:23] [INFO] === 阶段 04: 3D 建模 ===
+[17:34:23] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\skills\packview-3d\scripts\packview3d.py --family double-flap --L 220.0 ...
+[17:34:23] [INFO]   -> double-flap-box              OK  standard-step       72.4KB -> E:\Marvis\图档\MO9_手机一纸成型包装\04_3D\model.glb\double-flap-box.stp
+[17:34:23] [INFO]   -> --- 1/1 ok, 0 skipped, 0.0s, mode=step -> E:\Marvis\图档\MO9_手机一纸成型包装\04_3D\model.glb
+[17:34:23] [WARN] packview3d 输出 .3dm (保留: E:\Marvis\图档\MO9_手机一纸成型包装\04_3D\model.glb_rhino3dm) → 转 Blender 兜底生成 glb
+[17:34:23] [INFO] 贴图 -> artwork_face.png (82,838 B)
+[17:34:23] [INFO] $ C:\Program Files\Blender Foundation\Blender 5.1\blender.exe -b -P E:\Marvis\pipeline\blender_box.py -- --L ...
+[17:35:13] [INFO]   -> VIEW: E:\Marvis\图档\MO9_手机一纸成型包装\04_3D\view_07.png 636214
+[17:35:13] [INFO]   -> STRUCT ok=1 parts=2 issues=-
+[17:35:13] [INFO]   -> Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+[17:35:13] [INFO]   -> 
+[17:35:13] [INFO]   -> Blender quit
+[17:35:13] [INFO] 3D 模型 (Blender) -> model.glb (89,672 B), 8 视角
+[17:35:13] [INFO] 交互查看器 -> viewer.html
+[17:35:13] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\delivery-effects\build_preview_pack.py --model E:\Marvis\图档\MO9_手机一纸成型包装\04_3D\model.glb --out E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\预览 ...
+[17:35:13] [INFO]   -> [OK] vendor 已拷贝（离线可用）
+[17:35:13] [INFO]   -> [OK] 3D 预览打包 -> E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\预览 (model.glb 89672 bytes)
+[17:35:13] [INFO] 增强预览包 -> 09_交付/预览/preview.html
+[17:35:13] [INFO] === 阶段 05: 渲染 ===
+[17:35:13] [INFO] 标准 STP 源: 左右翻盖盒 | double flap box - 左右翻盖盒.STP
+[17:35:13] [INFO] 真结构源: double flap box - 左右翻盖盒.STP | 三轴目标 220.0×160.0×60.0 mm
+[17:35:15] [INFO] 印刷贴图 -> artwork_face.png (82,838 B)
+[17:35:15] [INFO] Blender Cycles: 加厚 2.0mm 倒圆 1.2mm 1600px 96spp
+[17:35:56] [INFO] 视角 FRONT -> OK
+[17:36:40] [INFO] 视角 RIGHT -> OK
+[17:37:28] [INFO] 视角 TOP -> OK
+[17:38:16] [INFO] 视角 ISOMETRIC -> OK
+[17:38:55] [INFO] 视角 SHELF -> OK
+[17:38:55] [INFO] 真结构主图 (标准 STP · Blender Cycles) 5 视角 -> 05_渲染/ks_*.png
+[17:38:55] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\video\video_composer.py --views E:\Marvis\图档\MO9_手机一纸成型包装\05_渲染 --out E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\视频\showcase.mp4 ...
+[17:38:57] [INFO]   -> [video] 合成: 165 帧 @ 22 fps -> E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\视频\showcase.mp4 (1920x1080)
+[17:38:57] [INFO]   -> [OK] 视频合成成功: E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\视频\showcase.mp4 (576975 bytes)
+[17:38:57] [INFO] 展示视频 -> 09_交付/视频/showcase.mp4
+[17:38:57] [INFO] === 阶段 06: G3 视觉审查 ===
+[17:38:57] [INFO]   02_刀版: 6 个有效文件
+[17:38:57] [INFO]   03_视觉: 5 个有效文件
+[17:38:57] [INFO]   3D 部件: body,flap
+[17:38:57] [INFO]   3D 外形: {'X': 220.0, 'Y': 160.0, 'Z': 62.0} | 特征: {'part_count': 2}
+[17:38:57] [INFO]   3D 渲染: 8 视角 + model.glb (89,672 B)
+[17:38:57] [INFO]   标准源校验: 9 项全 PASS
+[17:38:57] [INFO] === G3 通过 OK ===
+[17:38:57] [INFO]   审查报告 -> 06_审查/G3_视觉审查报告.json|.md
+[17:38:57] [INFO] === 阶段 07: 印前 + G4 ===
+[17:38:57] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\print-preflight\print_preflight.py --artifact E:\Marvis\图档\MO9_手机一纸成型包装\03_视觉\print_artwork_outlined.svg --task-id PIPE-MO9_手机一纸成型包装 ...
+[17:38:58] [INFO]   -> PREFLIGHT ok critical=[] warn=[]
+[17:38:58] [INFO]   -> OUT E:\Marvis\图档\MO9_手机一纸成型包装\03_视觉\print_artwork_outlined.svg.preflight.json
+[17:38:58] [INFO] === G4 通过 OK ===
+[17:38:58] [INFO] CMYK PDF -> print_cmyk.pdf (4,333 B)
+[17:38:58] [INFO] $ node E:\Marvis\packview-dieline\packview-dieline.js --family double-flap --variant base ...
+[17:38:58] [INFO]   -> 盒型: 左右翻盖盒（左右对开翻盖·一纸成型） (double-flap/base)
+[17:38:58] [INFO]   -> 尺寸: L220 × W160 × H60 mm 纸厚 2mm
+[17:38:58] [INFO]   -> 展开尺寸: 785 × 340 mm（含出血 5mm）
+[17:38:58] [INFO]   -> 图层: CUT刀线/CREASE压痕/PERF齿线/KISS半切/BLEED出血/FACE画面/DIM尺寸 (R12 ASCII, 单位mm)
+[17:38:58] [INFO]   -> 尺寸标注: 已启用
+[17:38:58] [INFO] DXF -> dieline-double-flap-base-L220.0-W160.0-H60.0.dxf (3,256 B) | R12 + 7 层 已校验
+[17:38:58] [INFO] 标准刀版交付 -> 标准刀版_double-flap-box.dxf (82,249 B, CUT闭合 45 环)
+[17:38:58] [INFO] $ C:\Program Files\gs\gs10.08.0\bin\gswin64c.exe -dNOSAFER -dPDFX -dBATCH -dNOPAUSE -dNOOUTERSAVE ...
+[17:38:58] [INFO]   -> Page 1
+[17:38:58] [INFO]   -> Loading font Helvetica (or substitute) from %rom%Resource/Font/NimbusSans-Regular
+[17:38:58] [INFO]   -> Loading font Helvetica-Bold (or substitute) from %rom%Resource/Font/NimbusSans-Bold
+[17:38:58] [INFO]   -> Loading font ZapfDingbats (or substitute) from %rom%Resource/Font/D050000L
+[17:38:58] [INFO]   -> Loading CIDFont STSong-Light (or substitute) from C:/Windows/Fonts/simsun.ttc
+[17:38:58] [INFO] PDF/X -> print_x3.pdf (170,690 B) | 版本声明=有 OutputIntent=有 字体嵌入=4个/全嵌入
+[17:38:58] [INFO] === PDF/X 校验通过 OK ===
+[17:38:58] [INFO] $ E:\Marvis\tools\verapdf\app\verapdf.bat E:\Marvis\图档\MO9_手机一纸成型包装\08_输出\print_cmyk.pdf
+[17:39:00] [INFO]   ->     <featureReports failedJobs="0">0</featureReports>
+[17:39:00] [INFO]   ->     <repairReports failedJobs="0">0</repairReports>
+[17:39:00] [INFO]   ->     <duration start="1794994740141" finish="1794994740724">00:00:00.583</duration>
+[17:39:00] [INFO]   ->   </batchSummary>
+[17:39:00] [INFO]   -> </report>
+[17:39:00] [WARN]   [ERR] 
+[17:39:00] [INFO]   预检报告 -> 07_预检/G4_印前预检报告.json|.md
+[17:39:00] [INFO] === 阶段 08: 交付 ===
+[17:39:00] [INFO]   说明书 -> 印刷工艺说明书.pdf
+[17:39:00] [INFO]   说明书 -> 结构工艺说明书.pdf
+[17:39:00] [INFO]   说明书 -> 产品标签说明书.pdf
+[17:39:00] [INFO] $ E:\Program Files\Tencent\Marvis\MarvisAgent\1.60.3400.795\runtime\python311\python.exe E:\Marvis\tools\delivery-effects\collect_effects.py --project-root E:\Marvis\图档\MO9_手机一纸成型包装
+[17:39:00] [INFO]   -> [OK] 双轨归集: 真结构 5 / AI 1 / 主轨 both -> E:\Marvis\图档\MO9_手机一纸成型包装\09_交付\效果图
+[17:39:00] [INFO] manifest: 45 个文件 (回读校验 OK)
+[17:39:00] [INFO] 🎉 全流程完成 — 45 个交付文件
+[17:39:00] [INFO] 机读状态 -> run_status.json (ok=True, stage=08_交付)
+[17:39:00] [INFO] 证据侧 -> verdict=NOT_EVALUATED release=NOT_RELEASED run_id=None

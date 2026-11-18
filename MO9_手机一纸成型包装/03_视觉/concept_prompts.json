@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "project": "MO9_手机一纸成型包装",
+    "product": "MO9手机",
+    "box_family": "double-flap",
+    "dims": {
+      "L": 220.0,
+      "W": 160.0,
+      "H": 60.0,
+      "D": 2.0
+    },
+    "materials": {
+      "face_paper": "158g 铜版纸",
+      "inner_fill": "EVA",
+      "logo_finish": "烫黄金"
+    },
+    "handraw_root": "E:\\Marvis\\handraw-style",
+    "engine": "handraw-style bridge v1",
+    "contract": "structure+material+finishing+layout_prose+negative"
+  },
+  "prompts": [
+    {
+      "slot": "hero",
+      "layout_id": "EC-001",
+      "layout_name": "单品主图",
+      "layout_name_en": "Single Product Hero Image",
+      "use": "单品主图 · 闭合盒主视觉",
+      "aspect": "4:3",
+      "prompt_zh": "【结构】double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，盒盖完整闭合，45° 俯视三分之四视角，盒体居中占据画面 70%，背景为深灰无影影棚，顶部柔光加右后侧逆光勾边。【材料】面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力。【工艺】烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架。 电商单品主图。核心任务：第一眼看清商品。受众：。主题：MO9手机 包装设计与工艺呈现。文案：盒面品牌名与产品名，工艺与材质标注文案由设计自主撰写，文字须参与构图。商品主体：。必须保留的商品识别信息：。其余画面表现请围绕“主体清晰、商品突出、第一眼看懂商品”完成。场景和周边元素可以采用指定画风，但是必须保持商品的写实风格。 【画幅】4:3。 排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "prompt_en": "[Structure] double-flap, outer size 220 x 160 x 60 mm, board thickness 2 mm, lid fully closed, three-quarter 45-degree top-down view, box centered and filling about 70% of frame, dark grey seamless studio background, soft top light with rim light from rear right. [Material] face paper 158g 铜版纸 laminated to 2 mm grey board, liner EVA; fine paper fibre texture with matte hand-feel, not plastic, not acrylic. [Finishing] 烫黄金 hot-stamping on the brand mark, overall matte lamination, spot UV highlights, embossed lettering, crisp die-cut edges, clearly separated finishing layers. E-commerce single product hero image. Core task: Clearly present the product at first glance. Audience: . Theme: . Copy: . Product subject: {Specified by user, recognized from reference image, or extracted from product data}. Mandatory product identification features: {Summarized based on reference image or data; leave blank if no special requirements}. Render the rest of the visual presentation around \"clear subject, prominent product, immediately understandable at first glance\". Background scenes and surrounding elements may adopt the specified artistic style, but the product itself must strictly maintain a realistic photographic style. Aspect ratio 4:3. Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "negative_zh": "排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "negative_en": "Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "spec": {
+        "structure": "double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，盒盖完整闭合，45° 俯视三分之四视角，盒体居中占据画面 70%，背景为深灰无影影棚，顶部柔光加右后侧逆光勾边",
+        "material": "面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力",
+        "finish": "烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架"
+      },
+      "layout_template_found": true
+    },
+    {
+      "slot": "open",
+      "layout_id": "EC-004",
+      "layout_name": "包装 / 套装 / 内容物展示图",
+      "layout_name_en": "Packaging / Set / Contents Display Image",
+      "use": "包装内容物 · 开盒内衬展示",
+      "aspect": "4:3",
+      "prompt_zh": "【结构】double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，盒盖掀开斜置于盒体后方，正视偏 30° 俯角，完整露出内衬、产品本体与全部随附件，层级关系清晰不遮挡。【材料】面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力。【工艺】烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架。 电商包装、套装与内容物展示图。核心任务：让用户快速看清购买后实际获得的商品、包装、配件或组合内容。受众：包装采购决策者与终端消费者，关注质感、工艺与开盒体验。主题：MO9手机 包装设计与工艺呈现。文案：盒面品牌名与产品名，工艺与材质标注文案由设计自主撰写，文字须参与构图。商品与内容物：MO9手机 本体、EVA 内衬与盒体；不得补造不存在的配件或赠品。其余陈列方式、层级关系与视觉组织请自主完成。场景和周边元素可以采用指定画风，但是必须保持商品的写实风格。 【画幅】4:3。 排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "prompt_en": "[Structure] double-flap, outer size 220 x 160 x 60 mm, board thickness 2 mm, lid lifted and tilted behind the base, 30-degree downward front view, fully revealing the liner, the product itself and every included accessory, clear layering without occlusion. [Material] face paper 158g 铜版纸 laminated to 2 mm grey board, liner EVA; fine paper fibre texture with matte hand-feel, not plastic, not acrylic. [Finishing] 烫黄金 hot-stamping on the brand mark, overall matte lamination, spot UV highlights, embossed lettering, crisp die-cut edges, clearly separated finishing layers. E-commerce packaging, set, and contents display image. Core task: Let users quickly see what is actually included upon purchase—products, packaging, accessories, or bundled items. Audience: . Theme: . Copy: . Product and contents: {Extracted from user input, product list, or reference data; do not invent non-existent accessories or gifts}. Autonomously arrange display composition, hierarchical relations, and visual layout. Background scenes and surrounding elements may adopt the specified artistic style, but the product itself must strictly maintain a realistic photographic style. Aspect ratio 4:3. Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "negative_zh": "排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "negative_en": "Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "spec": {
+        "structure": "double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，盒盖掀开斜置于盒体后方，正视偏 30° 俯角，完整露出内衬、产品本体与全部随附件，层级关系清晰不遮挡",
+        "material": "面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力",
+        "finish": "烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架"
+      },
+      "layout_template_found": true
+    },
+    {
+      "slot": "material",
+      "layout_id": "EC-008",
+      "layout_name": "材质 / 结构解析图",
+      "layout_name_en": "Material / Structure Exploded Image",
+      "use": "材质结构解析 · 分层剖面爆炸",
+      "aspect": "4:3",
+      "prompt_zh": "【结构】double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，结构分层分解视图：面纸层、灰板层、内衬层与盒体沿同一轴向拉开等距堆叠，配局部剖面与放大细节，各层关系一目了然。【材料】面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力。【工艺】烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架。 电商材质与结构解析图。核心任务：解释商品由什么构成，以及材质、结构或组成为什么重要。受众：包装采购决策者与终端消费者，关注质感、工艺与开盒体验。主题：MO9手机 包装设计与工艺呈现。文案：盒面品牌名与产品名，工艺与材质标注文案由设计自主撰写，文字须参与构图。商品主体：。材质、组成或结构信息：。其余剖面、分层、局部放大、爆炸展开等视觉表达方式请自主选择。场景和周边元素可以采用指定画风，但是必须保持商品的写实风格。 【画幅】4:3。 排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "prompt_en": "[Structure] double-flap, outer size 220 x 160 x 60 mm, board thickness 2 mm, exploded structural layer view: face paper, grey board, liner and body pulled apart along one axis at equal spacing, with cut-away section and magnified detail, layer relationships immediately legible. [Material] face paper 158g 铜版纸 laminated to 2 mm grey board, liner EVA; fine paper fibre texture with matte hand-feel, not plastic, not acrylic. [Finishing] 烫黄金 hot-stamping on the brand mark, overall matte lamination, spot UV highlights, embossed lettering, crisp die-cut edges, clearly separated finishing layers. E-commerce material and structure analysis image. Core task: Explain what the product is made of, and why its materials, structure, or composition matter. Audience: . Theme: . Copy: . Product subject: {Specified by user, recognized from reference image, or extracted from product data}. Material, composition, or structural information: {Extracted from user input or product data; interpret appropriately as ingredients, fabrics, components, layers, or internal structure depending on product type}. Autonomously select visual techniques such as cross-sections, exploded views, layering, or callout blowups. Background scenes and surrounding elements may adopt the specified artistic style, but the product itself must strictly maintain a realistic photographic style. Aspect ratio 4:3. Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "negative_zh": "排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "negative_en": "Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "spec": {
+        "structure": "double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，结构分层分解视图：面纸层、灰板层、内衬层与盒体沿同一轴向拉开等距堆叠，配局部剖面与放大细节，各层关系一目了然",
+        "material": "面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力",
+        "finish": "烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架"
+      },
+      "layout_template_found": true
+    },
+    {
+      "slot": "multiangle",
+      "layout_id": "EC-002",
+      "layout_name": "多角度展示图",
+      "layout_name_en": "Multi-Angle Display Image",
+      "use": "多角度展示 · 三视角并列",
+      "aspect": "16:9",
+      "prompt_zh": "【结构】double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，同一盒体的正视、侧视、45° 俯视三视角并列排布，等大等比，共用统一光影与背景。【材料】面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力。【工艺】烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架。 电商多角度展示图。核心任务：让用户快速看清商品整体结构与不同视角。受众：包装采购决策者与终端消费者，关注质感、工艺与开盒体验。主题：MO9手机 包装设计与工艺呈现。文案：盒面品牌名与产品名，工艺与材质标注文案由设计自主撰写，文字须参与构图。商品主体：。需要重点展示的角度或结构：。其余多视角组织方式与画面表现请自主完成。场景和周边元素可以采用指定画风，但是必须保持商品的写实风格。 【画幅】16:9，三视角等分。 排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "prompt_en": "[Structure] double-flap, outer size 220 x 160 x 60 mm, board thickness 2 mm, three views of the same box side by side - front, side, and 45-degree top-down - identical scale and proportion, shared lighting and background. [Material] face paper 158g 铜版纸 laminated to 2 mm grey board, liner EVA; fine paper fibre texture with matte hand-feel, not plastic, not acrylic. [Finishing] 烫黄金 hot-stamping on the brand mark, overall matte lamination, spot UV highlights, embossed lettering, crisp die-cut edges, clearly separated finishing layers. E-commerce multi-angle display image. Core task: Allow users to quickly see the overall product structure and different perspectives. Audience: . Theme: . Copy: . Product subject: {Specified by user, recognized from reference image, or extracted from product data}. Angles or structures to emphasize: {Specified by user; if unspecified, determine the most informative angles based on product morphology}. Autonomously arrange the multi-angle composition and visual presentation. Background scenes and surrounding elements may adopt the specified artistic style, but the product itself must strictly maintain a realistic photographic style. Aspect ratio 16:9. Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "negative_zh": "排除：廉价塑料反光、镜子级高光、过度装饰堆砌、盒体透视错误与比例失真、文字乱码与错字、水印与图库标记、logo 变形、多指畸变、低分辨率噪点、过曝死白、杂乱背景",
+      "negative_en": "Negative: cheap plastic glare, mirror-like specular highlights, over-decorated clutter, wrong perspective or distorted box proportions, garbled text, watermark or stock marks, deformed logo, extra fingers, low-res noise, blown-out whites, busy background",
+      "spec": {
+        "structure": "double-flap，外尺寸 220×160×60 mm，纸板厚 2 mm，同一盒体的正视、侧视、45° 俯视三视角并列排布，等大等比，共用统一光影与背景",
+        "material": "面纸 158g 铜版纸 裱 2 mm 灰板，内衬 EVA；纸面保留细腻纤维纹理与哑光质感，非塑料非亚克力",
+        "finish": "烫黄金 商标烫印，整体覆哑膜，局部 UV 高光点缀，字标击凸，压纹边缘干净利落，工艺层次分明不互相打架"
+      },
+      "layout_template_found": true
+    }
+  ]
+}
