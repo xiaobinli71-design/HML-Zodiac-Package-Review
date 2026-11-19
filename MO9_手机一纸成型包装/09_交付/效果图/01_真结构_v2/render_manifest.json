@@ -1,0 +1,37 @@
+{
+  "engine": "Blender 5.1.2 / Cycles OPTIX (RTX 3060)",
+  "samples": 192,
+  "resolution": "1600x1600",
+  "view_transform": "AgX Medium High Contrast",
+  "structure": {
+    "family": "double-flap",
+    "outer_mm": [
+      220,
+      160,
+      60
+    ],
+    "board_mm": 2,
+    "parts": [
+      "body(5面开口盒)",
+      "lid_L(带插舌)",
+      "lid_R(带插舌)",
+      "liner(纸浆托3槽)"
+    ],
+    "objects": [
+      "phone 158x74x8.2 三摄+侧键",
+      "charger",
+      "cable",
+      "foil_gold_logo"
+    ]
+  },
+  "views": {
+    "hero_CLOSED.png": "闭合态 3/4 俯视，顶面印刷跨两片翻盖拼合",
+    "hero_OPEN.png": "打开态 112°，左右翻盖外张，露出纸托+手机+配件",
+    "hero_TOP.png": "正俯视，顶面印刷完整对位校验",
+    "hero_FRONT.png": "正立面，烫金 MO9 logo",
+    "hero_SIDE.png": "侧面长边立面",
+    "hero_DETAIL.png": "开盒局部特写，翻盖边缘/纸厚/内托"
+  },
+  "deprecated_archived_to": "_deprecated_旧渲染",
+  "generated_at": "2026-11-18"
+}

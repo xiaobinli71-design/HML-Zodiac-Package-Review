@@ -1,37 +1,56 @@
 <!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>MO9_手机一纸成型包装 — 效果图双轨对照</title>
+<title>MO9_手机一纸成型包装 — 效果图（v2 真结构）</title>
 <style>
-:root{--bg:#121417;--card:#1c1f24;--fg:#e8eaed;--mut:#9aa0a6;--acc:#4da3ff}
+:root{--bg:#121417;--card:#1c1f24;--fg:#e8eaed;--mut:#9aa0a6;--acc:#4da3ff;--warn:#ffb020}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);
 font-family:"Microsoft YaHei",system-ui,sans-serif;padding:20px;max-width:1280px;margin:auto}
-h1{font-size:20px;margin:0 0 4px}.status{color:var(--mut);font-size:13px;margin-bottom:16px}
-.status b{color:var(--acc)}
+h1{font-size:20px;margin:0 0 4px}.status{color:var(--mut);font-size:13px;margin-bottom:16px;line-height:1.7}
+.status b{color:var(--acc)}.status .w{color:var(--warn)}
 .cmp{position:relative;width:100%;aspect-ratio:1;background:#000;border-radius:10px;
 overflow:hidden;user-select:none;touch-action:none}
 .cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
 .cmp .top{clip-path:inset(0 calc(100% - var(--x,50%)) 0 0)}
 .cmp .bar{position:absolute;top:0;bottom:0;left:var(--x,50%);width:2px;background:var(--acc);
 transform:translateX(-1px);pointer-events:none}
-.cmp .bar::after{content:"⇔";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+.cmp .bar::after{content:"\21D4";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
 background:var(--acc);color:#fff;border-radius:50%;width:34px;height:34px;display:grid;place-items:center}
 .cmp .tag{position:absolute;top:10px;padding:3px 10px;font-size:12px;border-radius:4px;
 background:rgba(0,0,0,.55);z-index:2;pointer-events:none}
 .cmp .tag.l{left:10px}.cmp .tag.r{right:10px}
 h2{font-size:15px;color:var(--mut);margin:22px 0 10px;border-left:3px solid var(--acc);padding-left:8px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px}
 figure{margin:0;background:var(--card);border-radius:8px;overflow:hidden}
 figure img{width:100%;aspect-ratio:1;object-fit:contain;background:#000;display:block;cursor:pointer}
-figcaption{font-size:12px;color:var(--mut);padding:6px 8px;text-align:center}
-.empty{color:var(--mut);background:var(--card);border-radius:8px;padding:24px;text-align:center;font-size:13px}
+figcaption{font-size:12px;color:var(--fg);padding:6px 8px;text-align:center}
+figcaption .c{color:var(--mut);font-size:11px}
+.note{color:var(--mut);background:var(--card);border-radius:8px;padding:16px 18px;font-size:12.5px;line-height:1.8}
+.note code{color:var(--acc)}
 </style></head><body>
-<h1>MO9_手机一纸成型包装 — 效果图双轨对照</h1>
-<div class="status">真结构 <b>5</b> 张 · AI 概念 <b>1</b> 张 · 主轨 <b>双轨</b><br>双轨齐全：左真结构 / 右 AI 概念，拖动滑块对照</div>
-<div class="cmp"><img class="base" src="02_AI概念/ai_ai_concept_MO9_手机一纸成型包装_20261118.png"><img class="top" src="01_真结构/ks_FRONT_MO9_手机一纸成型包装_20261118.png"><div class="tag l">真结构</div><div class="tag r">AI 概念</div><div class="bar"></div></div>
-<h2>01 真结构（标准盒型库 STP · Blender Cycles · 05_渲染）</h2>
-<div class="grid"><figure><img loading="lazy" src="01_真结构/ks_FRONT_MO9_手机一纸成型包装_20261118.png" alt="FRONT"><figcaption>FRONT</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_ISOMETRIC_MO9_手机一纸成型包装_20261118.png" alt="ISOMETRIC"><figcaption>ISOMETRIC</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_RIGHT_MO9_手机一纸成型包装_20261118.png" alt="RIGHT"><figcaption>RIGHT</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_SHELF_MO9_手机一纸成型包装_20261118.png" alt="SHELF"><figcaption>SHELF</figcaption></figure><figure><img loading="lazy" src="01_真结构/ks_TOP_MO9_手机一纸成型包装_20261118.png" alt="TOP"><figcaption>TOP</figcaption></figure></div>
-<h2>02 AI 概念（03_视觉）</h2>
-<div class="grid"><figure><img loading="lazy" src="02_AI概念/ai_ai_concept_MO9_手机一纸成型包装_20261118.png" alt="ai_concept"><figcaption>ai_concept</figcaption></figure></div>
+<h1>MO9_手机一纸成型包装 — 效果图（v2 真结构 · 六视角）</h1>
+<div class="status">
+真结构 <b>6</b> 张（v2）· AI 概念 <b>1</b> 张 · 旧渲染 <span class="w">已归档，不作交付依据</span><br>
+引擎 Blender 5.1.2 / Cycles OPTIX（RTX 3060）· 192 samples · 1600×1600 · AgX Medium High Contrast<br>
+盒型 double-flap / base · L220 × W160 × H60 mm · 纸板厚 2 mm · 标签集 electronics
+</div>
+<div class="cmp"><img class="base" src="02_AI概念/ai_ai_concept_MO9_手机一纸成型包装_20261118.png"><img class="top" src="01_真结构_v2/hero_CLOSED.png"><div class="tag l">真结构 v2</div><div class="tag r">AI 概念</div><div class="bar"></div></div>
+<h2>01 真结构 v2（六视角 · 交付依据）</h2>
+<div class="grid">
+<figure><img loading="lazy" src="01_真结构_v2/hero_CLOSED.png" alt="hero_CLOSED.png"><figcaption>hero_CLOSED<br><span class="c">闭合态 3/4 俯视 · 主 KV：顶面印刷跨两片翻盖拼合</span></figcaption></figure>
+<figure><img loading="lazy" src="01_真结构_v2/hero_OPEN.png" alt="hero_OPEN.png"><figcaption>hero_OPEN<br><span class="c">打开态 112° · 左右翻盖外张，露出纸浆托 + 手机 + 配件</span></figcaption></figure>
+<figure><img loading="lazy" src="01_真结构_v2/hero_TOP.png" alt="hero_TOP.png"><figcaption>hero_TOP<br><span class="c">正俯视 · 顶面印刷完整对位校验</span></figcaption></figure>
+<figure><img loading="lazy" src="01_真结构_v2/hero_FRONT.png" alt="hero_FRONT.png"><figcaption>hero_FRONT<br><span class="c">正立面 · 侧面烫金 MO9 logo</span></figcaption></figure>
+<figure><img loading="lazy" src="01_真结构_v2/hero_SIDE.png" alt="hero_SIDE.png"><figcaption>hero_SIDE<br><span class="c">侧面长边立面 · 2 mm 纸厚侧缘</span></figcaption></figure>
+<figure><img loading="lazy" src="01_真结构_v2/hero_DETAIL.png" alt="hero_DETAIL.png"><figcaption>hero_DETAIL<br><span class="c">开盒局部特写 · 翻盖边缘 / 纸厚 / 内托</span></figcaption></figure>
+</div>
+<h2>02 AI 概念（03_视觉 · concept-only，不具结构效力）</h2>
+<div class="grid"><figure><img loading="lazy" src="02_AI概念/ai_ai_concept_MO9_手机一纸成型包装_20261118.png" alt="ai_concept"><figcaption>ai_concept<br><span class="c">仅作氛围参考，不得作为结构/尺寸/工艺依据</span></figcaption></figure></div>
+<h2>03 归档</h2>
+<div class="note">
+旧渲染（<code>ks_*.png</code> ×5、<code>view_*.png</code> ×8 等共 18 个文件）仅 body+flap 两部件、无翻盖与内衬、空盒无产品，已移入 <code>_deprecated_旧渲染/</code>，保留可回溯，不再作为交付引用。<br>
+v2 参数与结构清单见 <code>01_真结构_v2/render_manifest.json</code>，修正说明见 <code>01_真结构_v2/README_效果图修正说明.md</code>。<br>
+待确认：翻盖中缝叠压量（当前 2 mm）、内托材质（按纸浆模塑表现）、手机实测尺寸（现按 158×74×8.2 建模）。
+</div>
 <script>
 (function(){
   var cmp=document.querySelector('.cmp');if(!cmp)return;
@@ -44,8 +63,8 @@ figcaption{font-size:12px;color:var(--mut);padding:6px 8px;text-align:center}
     img.addEventListener('click',function(){
       var l=document.querySelector('.cmp .top'),r=document.querySelector('.cmp .base');
       if(!l||!r)return;
-      if(img.closest('.grid').previousElementSibling.textContent.indexOf('真结构')>=0){l.src=img.src;}
-      else{r.src=img.src;}
+      var cap=img.closest('figure').querySelector('figcaption').textContent||'';
+      if(img.getAttribute('src').indexOf('01_真结构')>=0){l.src=img.src;} else {r.src=img.src;}
     });});
 })();
 </script>

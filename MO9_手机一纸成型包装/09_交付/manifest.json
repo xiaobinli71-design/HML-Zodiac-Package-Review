@@ -5,227 +5,445 @@
     {
       "stage": "00_需求",
       "name": "brief.json",
-      "size": 713
+      "size": 713,
+      "sha256": "1e1ac51b557d76ff06eb486c307358ec608e0ea6e58ca7073994b192f8a07397",
+      "present": true
     },
     {
       "stage": "01_选型",
       "name": "selection_report.json",
-      "size": 650
+      "size": 650,
+      "sha256": "caa040f9ea04353a2800c57b2c6b5f641d5706cb3a789edb474bf94a130c4a1a",
+      "present": true
     },
     {
       "stage": "01_选型",
       "name": "supported_families.txt",
-      "size": 12189
+      "size": 12189,
+      "sha256": "cecc2f4a788cb7c54fe5c4170feba97004ff01e5669021f3b14310ecae734d97",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg",
-      "size": 1095
+      "size": 1095,
+      "sha256": "56e012d3cd58f3ca366dfcf5d9b2189cc435955c23f0c9291393924e4a7b5915",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.audit.json",
-      "size": 1336
+      "size": 1336,
+      "sha256": "c1c051800f9645ddb970c2ed22ded8d105f54b4228b669d051268ff7ff35ca55",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.svg.qcheck.json",
-      "size": 1980
+      "size": 1980,
+      "sha256": "f65924f657b3a9f55917e60eed15caf3e054f03088489227a7b15b598cabfc5c",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "dieline-double-flap-base-L220.0-W160.0-H60.0_prev.png",
-      "size": 10266
+      "size": 10266,
+      "sha256": "ff8d35d994626f116b40fe0a698db45c5e5b616fdb9484dad85244d9d78f35a8",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "standard_dieline.json",
-      "size": 1438
+      "size": 1438,
+      "sha256": "1cee67b4484a73e70e14342f55026bf86790d63a4d8519f955384c5a88e0fee4",
+      "present": true
     },
     {
       "stage": "02_刀版",
       "name": "标准刀版_double-flap-box.dxf",
-      "size": 82249
+      "size": 82249,
+      "sha256": "ae75ca3ddd52eb7d3f0483e4a0f0c16cd84285dfa00383c5f4cd9f066ac1054d",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "ai_concept.png",
-      "size": 2613614
+      "size": 2613614,
+      "sha256": "d43c41d0dfa3a869e1cbd75bb4d94d4456d057bb86089149443a83c01393a062",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "concept_prompt.md",
-      "size": 12856
+      "size": 12856,
+      "sha256": "a25fdfce006a8286735ce9779e32ada10d3257a3199eacd886956e50f84f05f3",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "concept_prompts.json",
-      "size": 17757
+      "size": 17757,
+      "sha256": "21a178dea971444106710a6b50940674fce282f2bd44ad4713dae01972b0caeb",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "print_artwork.svg",
-      "size": 2303
+      "size": 2303,
+      "sha256": "76d651c542f7b8331ccfa9b7e1c0894cdec8d443c8dee7c614e215189bb1bda6",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "print_artwork_outlined.svg",
-      "size": 62027
+      "size": 62027,
+      "sha256": "c1909f9d2ba786ba841717a557fa1a7da97c389eb31d0cf3c7419917bd196a02",
+      "present": true
     },
     {
       "stage": "03_视觉",
       "name": "print_artwork_outlined.svg.preflight.json",
-      "size": 1088
+      "size": 1088,
+      "sha256": "7c03a080e113d56762be28192fa9d5017d1edb8b1c52df5bb83e95028b15f38c",
+      "present": true
     },
     {
       "stage": "04_3D",
       "name": "artwork_face.png",
-      "size": 82838
+      "size": 82838,
+      "sha256": "c50749c5ec0ffdb42115fe017b5ea28645776726f6334f0ea24c86e7c6417948",
+      "present": true
     },
     {
       "stage": "04_3D",
       "name": "model.glb",
-      "size": 89672
+      "size": 89672,
+      "sha256": "4fc41bdab22d8c9edd36c64302da4121f4271037071a2d7e0dbd40ee3c79cd5d",
+      "present": true
     },
     {
       "stage": "04_3D",
       "name": "structure_report.json",
-      "size": 1338
+      "size": 1338,
+      "sha256": "b76dca08e1a52c3c8311b140908170ff06b56f91f4c11763c74720a83d9c33da",
+      "present": true
     },
     {
       "stage": "04_3D",
       "name": "view_00.png",
-      "size": 653894
+      "size": 653894,
+      "sha256": "ded70d9cec60f43838acb394456d163ec95d034162c56278defc191612d7fd53",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_01.png",
-      "size": 631694
+      "size": 631694,
+      "sha256": "d21228ae61e6693aad2950dcefa8c63da83a738fc07bfc6e6f79ac4b83283dc8",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_02.png",
-      "size": 652090
+      "size": 652090,
+      "sha256": "df7c41e28078bd3406d8ece5519185b09fe481e8e9c17cae377d77ec0d9a7b24",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_03.png",
-      "size": 633493
+      "size": 633493,
+      "sha256": "c94176cb2f338c2f3501f8c84cca711f49da58ea06ded46626583ac46a612fca",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_04.png",
-      "size": 668440
+      "size": 668440,
+      "sha256": "d2b3146118c240087771300739b0722c584935800f84a9995a590334eb843c46",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_05.png",
-      "size": 637335
+      "size": 637335,
+      "sha256": "078a7e962963e7412cdff12e8e3fe031f38e0763fdc7cde88cfa7ca29ac0a15f",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_06.png",
-      "size": 651546
+      "size": 651546,
+      "sha256": "aecef4463f44aebdbbd748bc579fd149c3b2284efe8dedb65c1f541f1ac30de8",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "view_07.png",
-      "size": 636214
+      "size": 636214,
+      "sha256": "f643301b8c1815c0327e96f1c485a82aa6d0d130ab4d7b131c2ce385b1f1d2c2",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "04_3D",
       "name": "viewer.html",
-      "size": 662
+      "size": 662,
+      "sha256": "544525eb7adf974c16b8544bddb66d7741281a930422ff661013d9bc416bf304",
+      "present": true
     },
     {
       "stage": "05_渲染",
       "name": "ks_FRONT.png",
-      "size": 2366795
+      "size": 2366795,
+      "sha256": "53c34bfa0f28416aea3ddad23fd7511e3664a8d8d3e15e2a88508b53bfe73339",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "05_渲染",
       "name": "ks_ISOMETRIC.png",
-      "size": 2591348
+      "size": 2591348,
+      "sha256": "c7377b58fb9eaea8949f0ac1a5a60dc17a1112866087c0eb1edbf0cb32ccea35",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "05_渲染",
       "name": "ks_RIGHT.png",
-      "size": 2420703
+      "size": 2420703,
+      "sha256": "0066157237b5e350d662d65cb253a41e8455b9ea54cef3d847d22f0d611b5e48",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "05_渲染",
       "name": "ks_SHELF.png",
-      "size": 2474171
+      "size": 2474171,
+      "sha256": "7938cfe6bb0d67b01a82d6a66eebcdd72e2f81673f681d34c3e800bbf77318dd",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "05_渲染",
       "name": "ks_TOP.png",
-      "size": 2718677
+      "size": 2718677,
+      "sha256": "557abf8c3b7bf95ceb3b6532a08b1dc431f555782335bd1e0915a313ba1139e2",
+      "present": true,
+      "deprecated": true
     },
     {
       "stage": "05_渲染",
       "name": "standard_render.json",
-      "size": 1499
+      "size": 1499,
+      "sha256": "e5261f349a55a7e33f9e57ffe5c5b802f29b6e207c6a2711db431ebb8b508b83",
+      "present": true
     },
     {
       "stage": "06_审查",
       "name": "G3_视觉审查报告.json",
-      "size": 9910
+      "size": 9910,
+      "sha256": "e4f68e585212cb75bbfabd85c5de87e0fb22dc45e72ea1768571e99da5306285",
+      "present": true
     },
     {
       "stage": "06_审查",
       "name": "G3_视觉审查报告.md",
-      "size": 2238
+      "size": 2238,
+      "sha256": "0c2e0ea6912f4c3c7939428b3f145f4ad736301888f38c2325002cde7232013a",
+      "present": true
     },
     {
       "stage": "07_预检",
       "name": "G4_印前预检报告.json",
-      "size": 2052
+      "size": 2052,
+      "sha256": "80deb994b9cf9af78c4968a096274a7646d19600a1d1e57586a7ae788a9d38df",
+      "present": true
     },
     {
       "stage": "07_预检",
       "name": "G4_印前预检报告.md",
-      "size": 1116
+      "size": 1116,
+      "sha256": "e038c798c058ce1e32fb3a357001d1ee09cff769f2e4a6da657df27a2e94578c",
+      "present": true
     },
     {
       "stage": "08_输出",
       "name": "dieline-double-flap-base-L220.0-W160.0-H60.0.dxf",
-      "size": 3256
+      "size": 3256,
+      "sha256": "094492f70ecd4c3f1d2ae9c4449c8a6bfa6fd52eed6a723c7354aa7dcdf62703",
+      "present": true
     },
     {
       "stage": "08_输出",
       "name": "print_cmyk.pdf",
-      "size": 4333
+      "size": 4333,
+      "sha256": "aa1e3ab11b8c8b2e81f55eb852b472c663a204a39e28a91ee65836084416582e",
+      "present": true
     },
     {
       "stage": "08_输出",
       "name": "print_x3.pdf",
-      "size": 170690
+      "size": 170690,
+      "sha256": "1638efcf0cb21e8fb95a0cd0d688bc7ca893c272a751fb04bdd90593d0b42101",
+      "present": true
     },
     {
       "stage": "08_输出",
       "name": "standard_dieline.json",
-      "size": 1438
+      "size": 1438,
+      "sha256": "1cee67b4484a73e70e14342f55026bf86790d63a4d8519f955384c5a88e0fee4",
+      "present": true
     },
     {
       "stage": "08_输出",
       "name": "标准刀版_double-flap-box.dxf",
-      "size": 82249
+      "size": 82249,
+      "sha256": "ae75ca3ddd52eb7d3f0483e4a0f0c16cd84285dfa00383c5f4cd9f066ac1054d",
+      "present": true
     },
     {
       "stage": "09_交付",
       "name": "产品标签说明书.pdf",
-      "size": 6300
+      "size": 6300,
+      "sha256": "a411b5091469079de3dfd3ec3c2fa74ff3ce2eafdb62abf4c8c99df852303f4c",
+      "present": true
     },
     {
       "stage": "09_交付",
       "name": "印刷工艺说明书.pdf",
-      "size": 6687
+      "size": 6687,
+      "sha256": "cf30b91ea0275cea25b7ad1e8bc81fbe91f61de49034ddb2a32886c8efb34843",
+      "present": true
     },
     {
       "stage": "09_交付",
       "name": "结构工艺说明书.pdf",
-      "size": 4934
+      "size": 4934,
+      "sha256": "077c5d1af1d767420c6089581eb3d4e8550d89d58566b66806af1bcf3e676382",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/index.html",
+      "size": 6090,
+      "sha256": "f382adf4cb19a5ce342e5f8f9055d2499695ca6ee05ddbeacb2ea8457feb4354",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/effects_report.json",
+      "size": 581,
+      "sha256": "6091172b2af65c96835043ef2929dd3f860948644cb6afe0d2ea02535c232fae",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_CLOSED.png",
+      "size": 2183573,
+      "sha256": "4f067b425e55ef16bf5cfff5827b7541444ced7631ab3752901ed614f788b267",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_OPEN.png",
+      "size": 2206900,
+      "sha256": "8e270f8c40e55eaa63db2de733f847d0a47aac043f26b1d68cad8dacb99e265a",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_TOP.png",
+      "size": 2250539,
+      "sha256": "edf0f8076c60874bd9d1a1ed98ffe79a59e78bac5b49854f3f6e50d87ccef861",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_FRONT.png",
+      "size": 1974928,
+      "sha256": "ba96690df01ef99c0738cc72b5662255b48c55170346e19d71e8fa8972b0ada1",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_SIDE.png",
+      "size": 1978658,
+      "sha256": "c73eb33389b9ed4c8b57f2ac75be28027380e3d9a913b97a199527ed7ee1f2aa",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/hero_DETAIL.png",
+      "size": 2169316,
+      "sha256": "6f77203bde6155a95eaa41e36c5ea9959c80418da670bbb99166e87be4051857",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/render_manifest.json",
+      "size": 1075,
+      "sha256": "9257a9dd295f9ebcb6e0a1305881dc0ea343484bd4a76e71c2cb4a3c1ff12bcc",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/01_真结构_v2/README_效果图修正说明.md",
+      "size": 2833,
+      "sha256": "e369003d3c62602326dd55d8ebae478b98922794d9a7c7a2a8a235fc3aa672d1",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "效果图/02_AI概念/ai_ai_concept_MO9_手机一纸成型包装_20261118.png",
+      "size": 2613614,
+      "sha256": "d43c41d0dfa3a869e1cbd75bb4d94d4456d057bb86089149443a83c01393a062",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "run_status.json",
+      "size": 2335,
+      "sha256": "bf482f2a31e85894ed77f0edf3b15d8012a61aa92dc92d14d215499746098c08",
+      "present": true
+    },
+    {
+      "stage": "09_交付",
+      "name": "pipeline_run.log",
+      "size": 11687,
+      "sha256": "575741a84b3730526690b4251848bfba610e8d00c8484302f293bc1b5d2f8e5b",
+      "present": true
+    },
+    {
+      "stage": "04_3D",
+      "name": "DEPRECATED.md",
+      "size": 532,
+      "sha256": "5e176310b4a2f8a872b772bec9683b4420070580eee4da5374a72f5ac1867f18",
+      "present": true
+    },
+    {
+      "stage": "05_渲染",
+      "name": "DEPRECATED.md",
+      "size": 529,
+      "sha256": "7575fe4435db9dba201d20621c0e2d1a5f39a972cebbb8008027cc8e70eae56b",
+      "present": true
     }
+  ],
+  "amended_at": "2026-11-19",
+  "amendment": "MO9-T1/T2：效果图 v2 六视角入库，旧渲染归档；manifest 补齐交付层文件与 sha256（对应 #15 完整性、#16 引擎口径、#11 证据语义）",
+  "gate_state": "NOT_VERIFIED",
+  "release_state": "NOT_RELEASED",
+  "blocked_items": [
+    "制造商 / 地址为临时值，待客户确认后回填",
+    "手机实测尺寸未回填（现按标称 158×74×8.2 建模）",
+    "翻盖中缝叠压量 2 mm 与插舌尺寸待与刀版核对",
+    "内托材质按纸浆模塑表现，若为 EPE/海绵需换材质重渲"
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "project": "MO9_手机一纸成型包装",
+  "project_id": "PIPE-MO9_手机一纸成型包装",
+  "product": "MO9手机",
+  "box_family": "double-flap",
+  "box_variant": "base",
+  "L": 220.0,
+  "W": 160.0,
+  "H": 60.0,
+  "D": 2.0,
+  "face_paper": "158g 铜版纸",
+  "logo_finish": "烫黄金",
+  "inner_fill": "EVA",
+  "label_json": "C:\\Users\\lixb1\\AppData\\Roaming\\Tencent\\Marvis\\User\\oAN1i2dCLLq34QD6pUob28RT4oeU\\workspace\\conv_2f9bafae2cd043fa86637661c4bc6a7e\\temp\\mo9_label_v2.json",
+  "label_profile": "electronics",
+  "std_box": null,
+  "handraw": true,
+  "concept_slots": null,
+  "concept_prompt_file": null,
+  "created": "2026-11-18T17:34:17",
+  "gotchas_loaded": 58
+}
